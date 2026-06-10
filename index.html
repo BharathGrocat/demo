@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bright Kid — Program Packages (3 design directions)</title>
+
+<!--
+  ============================================================
+  BRIGHT KID MONTESSORI — PROGRAM PACKAGE DESIGNS
+  ------------------------------------------------------------
+  Three self-contained directions for the "packages per class
+  section" block (Playgroup · Nursery · LKG · UKG · Daycare).
+
+  HOW TO USE:
+   - Each "Option" below is independent. Pick the one you like,
+     then copy that <section class="optN"> block + its matching
+     CSS block (clearly marked) into your site.
+   - PRICES ARE SAMPLES. Search for the word "PLACEHOLDER" or
+     just edit the ₹ values to your real monthly fees.
+   - Fonts load from Google Fonts; fallbacks are built in.
+  ============================================================
+-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800;900&family=Baloo+2:wght@500;600;700;800&family=Quicksand:wght@500;600;700&family=Mulish:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+  /* ---------- base / page chrome ---------- */
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"Nunito",system-ui,sans-serif;
+    color:#3a332e;
+    background:#fdfaf4;
+    -webkit-font-smoothing:antialiased;
+    line-height:1.5;
+  }
+  .page{max-width:1200px;margin:0 auto;padding:48px 24px 96px}
+  .page-head{text-align:center;max-width:760px;margin:0 auto 8px}
+  .page-head .kicker{
+    font-family:"Space Mono",monospace;font-size:12px;letter-spacing:.18em;
+    text-transform:uppercase;color:#b07a3d;
+  }
+  .page-head h1{
+    font-family:"Fredoka",sans-serif;font-weight:600;
+    font-size:clamp(28px,4vw,40px);line-height:1.1;margin:10px 0;color:#2c2722;
+  }
+  .page-head p{color:#7a7066;font-size:16px}
+  .note{
+    max-width:760px;margin:22px auto 0;display:flex;gap:12px;align-items:flex-start;
+    background:#fff5e3;border:1px dashed #e8c074;border-radius:14px;
+    padding:14px 18px;font-size:14px;color:#7a5a1f;
+  }
+  .note b{color:#5e4413}
+  .note svg{flex:none;margin-top:1px}
+
+  .optionbar{
+    display:flex;align-items:center;gap:14px;margin:72px 0 28px;
+  }
+  .optionbar .tag{
+    font-family:"Space Mono",monospace;font-size:12px;font-weight:700;
+    letter-spacing:.1em;color:#fff;background:#3a332e;border-radius:999px;
+    padding:6px 12px;white-space:nowrap;
+  }
+  .optionbar h2{
+    font-family:"Fredoka",sans-serif;font-weight:600;font-size:clamp(20px,2.4vw,26px);
+    color:#2c2722;white-space:nowrap;
+  }
+  .optionbar .rule{height:1px;background:#e7ded1;flex:1}
+  .optionbar .desc{font-size:13.5px;color:#9a9088;white-space:nowrap}
+  @media(max-width:720px){.optionbar{flex-wrap:wrap}.optionbar .desc{display:none}}
+
+  .visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+  /* =========================================================
+     OPTION 1 — "GROWTH PATH"
+     Sunrise palette deepens as the child grows. A dashed path
+     with numbered milestones (a real developmental sequence)
+     carries Playgroup→UKG; Daycare sits apart as an add-on.
+     ========================================================= */
+  .opt1{--ink:#3a332e}
+  .opt1 .track{position:relative;margin-top:8px}
+  .opt1 .path{
+    position:absolute;left:0;right:0;top:34px;height:0;
+    border-top:3px dashed #e3d2bb;z-index:0;
+  }
+  .opt1 .cards{
+    position:relative;z-index:1;display:grid;
+    grid-template-columns:repeat(4,1fr);gap:22px;
+  }
+  .opt1 .card{
+    display:flex;flex-direction:column;align-items:stretch;text-align:left;
+  }
+  .opt1 .milestone{
+    width:68px;height:68px;border-radius:50%;margin:0 auto 18px;
+    display:grid;place-items:center;background:#fff;
+    border:3px solid var(--c);box-shadow:0 6px 16px rgba(0,0,0,.06);
+    font-family:"Fredoka",sans-serif;font-weight:600;font-size:24px;color:var(--c);
+  }
+  .opt1 .panel{
+    background:#fff;border-radius:22px;padding:22px 20px 24px;
+    border:1px solid #f0e7d9;box-shadow:0 14px 34px -22px rgba(80,55,20,.35);
+    flex:1;display:flex;flex-direction:column;
+    border-top:6px solid var(--c);
+    transition:transform .25s ease, box-shadow .25s ease;
+  }
+  .opt1 .card:hover .panel{transform:translateY(-6px);box-shadow:0 26px 46px -24px rgba(80,55,20,.45)}
+  .opt1 .lvl{font-family:"Fredoka",sans-serif;font-weight:600;font-size:22px;color:var(--ink)}
+  .opt1 .age{
+    display:inline-block;margin-top:6px;font-family:"Space Mono",monospace;
+    font-size:11.5px;font-weight:700;letter-spacing:.04em;
+    color:var(--c);background:var(--soft);padding:4px 10px;border-radius:999px;
+  }
+  .opt1 .blurb{font-size:13.5px;color:#7a7066;margin:14px 0 16px;min-height:60px}
+  .opt1 ul{list-style:none;display:flex;flex-direction:column;gap:9px;margin-bottom:18px}
+  .opt1 li{display:flex;gap:9px;font-size:13.5px;color:#4a443d;align-items:flex-start}
+  .opt1 li .dot{flex:none;width:16px;height:16px;border-radius:50%;background:var(--soft);
+    display:grid;place-items:center;margin-top:2px}
+  .opt1 li .dot::after{content:"";width:6px;height:6px;border-radius:50%;background:var(--c)}
+  .opt1 .foot{margin-top:auto}
+  .opt1 .price{font-family:"Fredoka",sans-serif;font-weight:600;font-size:24px;color:var(--ink)}
+  .opt1 .price small{font-family:"Nunito";font-weight:600;font-size:13px;color:#9a9088}
+  .opt1 .cta{
+    display:block;text-align:center;margin-top:14px;text-decoration:none;
+    font-family:"Nunito";font-weight:800;font-size:14.5px;color:#fff;background:var(--c);
+    padding:12px;border-radius:12px;transition:filter .2s ease;
+  }
+  .opt1 .cta:hover{filter:brightness(.93)}
+  /* per-level sunrise colors */
+  .opt1 .c1{--c:#f4ad34;--soft:#fef0d4}
+  .opt1 .c2{--c:#f0825c;--soft:#fde2d8}
+  .opt1 .c3{--c:#2fa9a0;--soft:#d6efed}
+  .opt1 .c4{--c:#6c63b5;--soft:#e3e0f3}
+  /* daycare add-on band */
+  .opt1 .daycare{
+    margin-top:26px;background:linear-gradient(100deg,#5fb85a,#43a06b);
+    border-radius:22px;padding:26px 28px;color:#fff;
+    display:flex;align-items:center;gap:26px;flex-wrap:wrap;
+  }
+  .opt1 .daycare .dc-ic{
+    width:58px;height:58px;border-radius:16px;background:rgba(255,255,255,.18);
+    display:grid;place-items:center;font-size:28px;flex:none;
+  }
+  .opt1 .daycare h3{font-family:"Fredoka",sans-serif;font-weight:600;font-size:22px}
+  .opt1 .daycare p{font-size:14px;opacity:.95;max-width:520px;margin-top:4px}
+  .opt1 .daycare .dc-meta{margin-left:auto;text-align:right}
+  .opt1 .daycare .dc-price{font-family:"Fredoka",sans-serif;font-weight:600;font-size:24px}
+  .opt1 .daycare .dc-cta{
+    display:inline-block;margin-top:8px;text-decoration:none;background:#fff;color:#3c8a52;
+    font-family:"Nunito";font-weight:800;font-size:14px;padding:11px 22px;border-radius:11px;
+  }
+  @media(max-width:920px){
+    .opt1 .cards{grid-template-columns:repeat(2,1fr)}
+    .opt1 .path{display:none}
+    .opt1 .daycare .dc-meta{margin-left:0;text-align:left;width:100%}
+  }
+  @media(max-width:520px){
+    .opt1 .cards{grid-template-columns:1fr}
+  }
+
+  /* =========================================================
+     OPTION 2 — "CARD CATALOG"
+     Index-card styling (tab + punch hole + mono stamps) that
+     nods to physical Montessori materials. Calm sage palette,
+     muted per-program accents, trustworthy and organized.
+     ========================================================= */
+  .opt2{
+    --bg:#e9f0ea;--card:#ffffff;--ink:#26332c;--muted:#69756c;
+    --line:#d6e1d8;--clay:#cf7d49;
+    background:var(--bg);border-radius:28px;padding:40px 32px;
+  }
+  .opt2 .grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(225px,1fr));gap:20px;
+  }
+  .opt2 .ic{
+    position:relative;background:var(--card);border-radius:6px 6px 14px 14px;
+    border:1px solid var(--line);padding:0 22px 22px;
+    box-shadow:0 10px 26px -18px rgba(20,40,30,.4);
+    display:flex;flex-direction:column;
+    transition:transform .22s ease, box-shadow .22s ease;
+  }
+  .opt2 .ic:hover{transform:translateY(-5px);box-shadow:0 22px 38px -20px rgba(20,40,30,.5)}
+  .opt2 .tab{
+    margin:0 -22px;border-bottom:2px solid var(--ac);
+    background:var(--acsoft);border-radius:6px 6px 0 0;
+    padding:16px 22px 14px;position:relative;
+  }
+  .opt2 .punch{position:absolute;top:11px;right:18px;width:11px;height:11px;border-radius:50%;
+    background:var(--bg);box-shadow:inset 0 0 0 2px var(--line)}
+  .opt2 .stamp{
+    font-family:"Space Mono",monospace;font-size:10.5px;font-weight:700;letter-spacing:.12em;
+    text-transform:uppercase;color:var(--ac);
+  }
+  .opt2 .name{font-family:"Quicksand",sans-serif;font-weight:700;font-size:21px;color:var(--ink);margin-top:5px}
+  .opt2 .blurb{font-size:13px;color:var(--muted);margin:14px 0 14px;min-height:54px}
+  .opt2 ul{list-style:none;display:flex;flex-direction:column;gap:8px;margin-bottom:16px}
+  .opt2 li{display:flex;gap:9px;font-size:13px;color:#3c473f;align-items:flex-start}
+  .opt2 li::before{content:"";flex:none;width:9px;height:9px;border-radius:2px;background:var(--ac);margin-top:4px}
+  .opt2 .foot{margin-top:auto;border-top:1px dashed var(--line);padding-top:14px;
+    display:flex;align-items:center;justify-content:space-between;gap:8px}
+  .opt2 .fee{font-family:"Quicksand";font-weight:700;font-size:18px;color:var(--ink)}
+  .opt2 .fee small{font-weight:600;font-size:11px;color:var(--muted);display:block;letter-spacing:.02em}
+  .opt2 .cta{
+    text-decoration:none;font-family:"Mulish";font-weight:700;font-size:13px;color:var(--ink);
+    border:1.5px solid var(--ink);border-radius:9px;padding:9px 16px;white-space:nowrap;
+    transition:background .2s ease,color .2s ease;
+  }
+  .opt2 .cta:hover{background:var(--ink);color:#fff}
+  .opt2 .a1{--ac:#cf7d49;--acsoft:#f6ebe1}
+  .opt2 .a2{--ac:#3e9c8f;--acsoft:#e2f0ee}
+  .opt2 .a3{--ac:#cb9b2e;--acsoft:#f6efda}
+  .opt2 .a4{--ac:#8273ac;--acsoft:#ece9f3}
+  .opt2 .a5{--ac:#5a9d5a;--acsoft:#e6f0e6}
+  .opt2 body{font-family:"Mulish"}
+
+  /* =========================================================
+     OPTION 3 — "BRIGHT BLOCKS"
+     Bold color-blocked cards, oversized age type, tactile
+     hover tilt. The most energetic / kid-brand direction.
+     ========================================================= */
+  .opt3 .blocks{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:18px;
+  }
+  .opt3 .blk{
+    --tilt:-1.2deg;
+    background:var(--bg);color:#fff;border-radius:26px;padding:26px 24px 26px;
+    display:flex;flex-direction:column;position:relative;overflow:hidden;
+    box-shadow:0 16px 30px -16px var(--sh);
+    transition:transform .25s cubic-bezier(.34,1.4,.5,1), box-shadow .25s ease;
+  }
+  .opt3 .blk::before{
+    content:"";position:absolute;right:-30px;top:-30px;width:120px;height:120px;
+    background:rgba(255,255,255,.12);border-radius:50%;
+  }
+  .opt3 .blk:hover{transform:translateY(-8px) rotate(var(--tilt));box-shadow:0 30px 46px -18px var(--sh)}
+  .opt3 .agebig{font-family:"Baloo 2",cursive;font-weight:800;font-size:30px;line-height:1;position:relative}
+  .opt3 .agebig span{font-size:13px;font-weight:700;opacity:.85;display:block;margin-top:4px;font-family:"Nunito"}
+  .opt3 .bname{font-family:"Baloo 2",cursive;font-weight:700;font-size:23px;margin:18px 0 8px}
+  .opt3 .bblurb{font-size:13px;opacity:.94;margin-bottom:16px;min-height:54px}
+  .opt3 ul{list-style:none;display:flex;flex-direction:column;gap:8px;margin-bottom:18px}
+  .opt3 li{display:flex;gap:9px;font-size:13px;align-items:flex-start;opacity:.97}
+  .opt3 li svg{flex:none;margin-top:2px}
+  .opt3 .foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:10px}
+  .opt3 .pill{background:rgba(255,255,255,.2);border-radius:999px;padding:8px 14px;
+    font-family:"Baloo 2";font-weight:700;font-size:17px}
+  .opt3 .pill small{font-weight:600;font-size:10px;opacity:.85}
+  .opt3 .cta{
+    text-decoration:none;background:#fff;color:var(--bg);font-family:"Nunito";font-weight:900;
+    font-size:13.5px;padding:11px 18px;border-radius:13px;white-space:nowrap;
+    transition:transform .15s ease;
+  }
+  .opt3 .cta:hover{transform:scale(1.05)}
+  .opt3 .b1{--bg:#ff5a4d;--sh:rgba(255,90,77,.55)}
+  .opt3 .b2{--bg:#f7a521;--sh:rgba(247,165,33,.5)}
+  .opt3 .b3{--bg:#00b3a4;--sh:rgba(0,179,164,.5)}
+  .opt3 .b4{--bg:#4c6fff;--sh:rgba(76,111,255,.5)}
+  .opt3 .b5{--bg:#9b5de5;--sh:rgba(155,93,229,.5)}
+
+  /* ---------- motion / a11y ---------- */
+  a:focus-visible{outline:3px solid #4c6fff;outline-offset:3px;border-radius:6px}
+  @media(prefers-reduced-motion:reduce){
+    *{transition:none!important;animation:none!important;scroll-behavior:auto}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="page-head">
+    <div class="kicker">Bright Kid Montessori · Programs</div>
+    <h1>Programs that grow with your child</h1>
+    <p>From first steps in Playgroup to school-ready in UKG — pick the right fit for your child's age.</p>
+    <div class="note">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 8v5M12 16h.01" stroke="#b8860b" stroke-width="2.2" stroke-linecap="round"/><circle cx="12" cy="12" r="9" stroke="#b8860b" stroke-width="2"/></svg>
+      <span><b>Heads up:</b> the ₹ fees below are samples so you can see the layout. Swap in your real monthly fees (search the code for the ₹ values). Three design directions follow — keep the one you like.</span>
+    </div>
+  </header>
+
+  <!-- ===================== OPTION 1 ===================== -->
+  <div class="optionbar">
+    <span class="tag">OPTION 1</span>
+    <h2>Growth Path</h2>
+    <span class="rule"></span>
+    <span class="desc">warm · developmental · parent-facing</span>
+  </div>
+
+  <section class="opt1" aria-label="Programs — Growth Path layout">
+    <div class="track">
+      <div class="path" aria-hidden="true"></div>
+      <div class="cards">
+
+        <div class="card c1">
+          <div class="milestone">1</div>
+          <div class="panel">
+            <div class="lvl">Playgroup</div>
+            <span class="age">AGE 1.5 – 2.5 YRS</span>
+            <p class="blurb">First steps away from home. Sensory play, music and movement, and gentle routines that build confidence.</p>
+            <ul>
+              <li><span class="dot"></span>2.5-hour sessions</li>
+              <li><span class="dot"></span>Sensorial &amp; practical-life play</li>
+              <li><span class="dot"></span>Music &amp; movement</li>
+              <li><span class="dot"></span>Trained Montessori teacher</li>
+            </ul>
+            <div class="foot">
+              <div class="price">₹4,500<small> /month</small></div><!-- PLACEHOLDER -->
+              <a class="cta" href="#">Enquire / Enroll</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card c2">
+          <div class="milestone">2</div>
+          <div class="panel">
+            <div class="lvl">Nursery</div>
+            <span class="age">AGE 2.5 – 3.5 YRS</span>
+            <p class="blurb">Curiosity takes shape. Practical-life activities, early language, and craft that strengthen little hands and minds.</p>
+            <ul>
+              <li><span class="dot"></span>3-hour sessions</li>
+              <li><span class="dot"></span>AR-enabled Bright Books</li>
+              <li><span class="dot"></span>Craft &amp; activity box</li>
+              <li><span class="dot"></span>Early language &amp; pre-writing</li>
+            </ul>
+            <div class="foot">
+              <div class="price">₹5,500<small> /month</small></div><!-- PLACEHOLDER -->
+              <a class="cta" href="#">Enquire / Enroll</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card c3">
+          <div class="milestone">3</div>
+          <div class="panel">
+            <div class="lvl">LKG</div>
+            <span class="age">AGE 3.5 – 4.5 YRS</span>
+            <p class="blurb">Foundations for school. Phonics, numbers, and hands-on Montessori materials, tracked on the parent app.</p>
+            <ul>
+              <li><span class="dot"></span>Half &amp; full-day options</li>
+              <li><span class="dot"></span>Complete curriculum kit</li>
+              <li><span class="dot"></span>Phonics &amp; early numeracy</li>
+              <li><span class="dot"></span>Progress-tracking app</li>
+            </ul>
+            <div class="foot">
+              <div class="price">₹6,500<small> /month</small></div><!-- PLACEHOLDER -->
+              <a class="cta" href="#">Enquire / Enroll</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card c4">
+          <div class="milestone">4</div>
+          <div class="panel">
+            <div class="lvl">UKG</div>
+            <span class="age">AGE 4.5 – 5.5 YRS</span>
+            <p class="blurb">School-ready and proud. Reading, writing, and problem-solving that prepare children for big school.</p>
+            <ul>
+              <li><span class="dot"></span>Half &amp; full-day options</li>
+              <li><span class="dot"></span>Reading, writing &amp; math</li>
+              <li><span class="dot"></span>School-readiness checks</li>
+              <li><span class="dot"></span>Progress-tracking app</li>
+            </ul>
+            <div class="foot">
+              <div class="price">₹7,500<small> /month</small></div><!-- PLACEHOLDER -->
+              <a class="cta" href="#">Enquire / Enroll</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Daycare = all-day add-on, intentionally off the sequence -->
+    <div class="daycare">
+      <div class="dc-ic">☀️</div>
+      <div>
+        <h3>Daycare</h3>
+        <p>Safe, happy, all-day care for working parents — meals, naptime, and supervised play, with flexible extended hours. Pairs with any program above.</p>
+      </div>
+      <div class="dc-meta">
+        <div class="dc-price">+ ₹6,000<span style="font-size:13px;font-weight:600;opacity:.9"> /month</span></div><!-- PLACEHOLDER -->
+        <a class="dc-cta" href="#">Add daycare</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== OPTION 2 ===================== -->
+  <div class="optionbar">
+    <span class="tag">OPTION 2</span>
+    <h2>Card Catalog</h2>
+    <span class="rule"></span>
+    <span class="desc">calm · organized · Montessori-material feel</span>
+  </div>
+
+  <section class="opt2" aria-label="Programs — Card Catalog layout">
+    <div class="grid">
+
+      <div class="ic a1">
+        <div class="tab"><span class="punch"></span><div class="stamp">Programme 01 · Ages 1.5–2.5</div><div class="name">Playgroup</div></div>
+        <p class="blurb">A gentle first classroom. Sensory play and simple routines that help little ones settle and explore.</p>
+        <ul>
+          <li>2.5-hour daily sessions</li>
+          <li>Sensorial &amp; practical-life play</li>
+          <li>Music &amp; movement</li>
+          <li>Trained Montessori teacher</li>
+        </ul>
+        <div class="foot">
+          <div class="fee">₹4,500<small>per month</small></div><!-- PLACEHOLDER -->
+          <a class="cta" href="#">Enquire</a>
+        </div>
+      </div>
+
+      <div class="ic a2">
+        <div class="tab"><span class="punch"></span><div class="stamp">Programme 02 · Ages 2.5–3.5</div><div class="name">Nursery</div></div>
+        <p class="blurb">Hands and minds at work. Early language, craft, and practical life that build everyday independence.</p>
+        <ul>
+          <li>3-hour daily sessions</li>
+          <li>AR-enabled Bright Books</li>
+          <li>Craft &amp; activity box</li>
+          <li>Early language &amp; pre-writing</li>
+        </ul>
+        <div class="foot">
+          <div class="fee">₹5,500<small>per month</small></div><!-- PLACEHOLDER -->
+          <a class="cta" href="#">Enquire</a>
+        </div>
+      </div>
+
+      <div class="ic a3">
+        <div class="tab"><span class="punch"></span><div class="stamp">Programme 03 · Ages 3.5–4.5</div><div class="name">LKG</div></div>
+        <p class="blurb">Foundations laid with care. Phonics, numbers, and Montessori materials, with progress shared to your app.</p>
+        <ul>
+          <li>Half &amp; full-day options</li>
+          <li>Complete curriculum kit</li>
+          <li>Phonics &amp; early numeracy</li>
+          <li>Progress-tracking app</li>
+        </ul>
+        <div class="foot">
+          <div class="fee">₹6,500<small>per month</small></div><!-- PLACEHOLDER -->
+          <a class="cta" href="#">Enquire</a>
+        </div>
+      </div>
+
+      <div class="ic a4">
+        <div class="tab"><span class="punch"></span><div class="stamp">Programme 04 · Ages 4.5–5.5</div><div class="name">UKG</div></div>
+        <p class="blurb">Ready for big school. Reading, writing, and problem-solving with confidence-building assessments.</p>
+        <ul>
+          <li>Half &amp; full-day options</li>
+          <li>Reading, writing &amp; math</li>
+          <li>School-readiness checks</li>
+          <li>Progress-tracking app</li>
+        </ul>
+        <div class="foot">
+          <div class="fee">₹7,500<small>per month</small></div><!-- PLACEHOLDER -->
+          <a class="cta" href="#">Enquire</a>
+        </div>
+      </div>
+
+      <div class="ic a5">
+        <div class="tab"><span class="punch"></span><div class="stamp">Add-on · Up to age 6</div><div class="name">Daycare</div></div>
+        <p class="blurb">All-day care that fits your schedule. Meals, rest, and supervised play with daily updates to parents.</p>
+        <ul>
+          <li>Flexible / extended hours</li>
+          <li>Nutritious meals &amp; snacks</li>
+          <li>Supervised nap &amp; rest</li>
+          <li>Daily updates to parents</li>
+        </ul>
+        <div class="foot">
+          <div class="fee">+ ₹6,000<small>per month</small></div><!-- PLACEHOLDER -->
+          <a class="cta" href="#">Enquire</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== OPTION 3 ===================== -->
+  <div class="optionbar">
+    <span class="tag">OPTION 3</span>
+    <h2>Bright Blocks</h2>
+    <span class="rule"></span>
+    <span class="desc">bold · playful · high-energy</span>
+  </div>
+
+  <section class="opt3" aria-label="Programs — Bright Blocks layout">
+    <div class="blocks">
+
+      <div class="blk b1">
+        <div class="agebig">1.5–2.5<span>years</span></div>
+        <div class="bname">Playgroup</div>
+        <p class="bblurb">First steps away from home — sensory play, songs, and gentle routines.</p>
+        <ul>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4 4 10-10" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>2.5-hour sessions</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4 4 10-10" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Sensorial play</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4 4 10-10" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Music &amp; movement</li>
+        </ul>
+        <div class="foot">
+          <div class="pill">₹4,500<small> /mo</small></div><!-- PLACEHOLDER -->
+          <a class="cta" href="#">Enroll</a>
+        </div>
+      </div>
+
+      <div class="blk b2">
+        <div class="agebig">2.5–3.5<span>years</span></div>
+        <div class="bname">Nursery</div>
+        <p class="bblurb">Curiosity takes shape with craft, early language, and practical life.</p>
+        <ul>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4 4 10-10" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>AR Bright Books</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4 4 10-10" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Craft &amp; activity box</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4 4 10-10" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Pre-writing</li>
+        </ul>
+        <div class="foot">
+          <div class="pill">₹5,500<small> /mo</small></div><!-- PLACEHOLDER -->
+          <a class="cta" href="#">Enroll</a>
+        </div>
+      </div>
+
+      <div class="blk b3">
+        <div class="agebig">3.5–4.5<span>years</span></div>
+        <div class="bname">LKG</div>
+        <p class="bblurb">Foundations for school — phonics, numbers, and Montessori materials.</p>
+        <ul>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4 4 10-10" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Full curriculum kit</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4 4 10-10" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Phonics &amp; numeracy</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4 4 10-10" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Progress app</li>
+        </ul>
+        <div class="foot">
+          <div class="pill">₹6,500<small> /mo</small></div><!-- PLACEHOLDER -->
+          <a class="cta" href="#">Enroll</a>
+        </div>
+      </div>
+
+      <div class="blk b4">
+        <div class="agebig">4.5–5.5<span>years</span></div>
+        <div class="bname">UKG</div>
+        <p class="bblurb">School-ready — reading, writing, and problem-solving with confidence.</p>
+        <ul>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4 4 10-10" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Reading &amp; writing</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4 4 10-10" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>School-readiness</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4 4 10-10" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Progress app</li>
+        </ul>
+        <div class="foot">
+          <div class="pill">₹7,500<small> /mo</small></div><!-- PLACEHOLDER -->
+          <a class="cta" href="#">Enroll</a>
+        </div>
+      </div>
+
+      <div class="blk b5">
+        <div class="agebig">All<span>day care</span></div>
+        <div class="bname">Daycare</div>
+        <p class="bblurb">Safe, happy, all-day care with meals, naps, and flexible hours.</p>
+        <ul>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4 4 10-10" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Flexible hours</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4 4 10-10" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Meals &amp; snacks</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4 4 10-10" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Daily updates</li>
+        </ul>
+        <div class="foot">
+          <div class="pill">+₹6,000<small> /mo</small></div><!-- PLACEHOLDER -->
+          <a class="cta" href="#">Enroll</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</div>
+</body>
+</html>
