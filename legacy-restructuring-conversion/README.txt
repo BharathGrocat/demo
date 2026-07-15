@@ -23,3 +23,6 @@ The form currently validates in the browser and shows a success state. It does n
 COUNTDOWN
 The campaign countdown target is set near the top of script.js:
   2026-09-15T23:59:59+05:30
+
+UPDATE:
+- Added a dedicated eligibility section, including the ₹5–50 Crore annual turnover criterion.

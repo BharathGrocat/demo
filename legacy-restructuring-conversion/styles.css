@@ -114,7 +114,7 @@ button, input, select, textarea { font: inherit; }
   backdrop-filter: blur(10px);
 }
 .nav-inner { min-height: 74px; display: flex; align-items: center; justify-content: space-between; }
-.brand-logo { display: block; width: auto; height: 38px; }
+.brand-logo { display: block; width: auto; height: 60px; }
 .desktop-nav { display: flex; align-items: center; gap: 26px; }
 .desktop-nav > a:not(.btn), .mobile-nav > a:not(.btn) { font-size: 14px; font-weight: 550; }
 .desktop-nav > a:not(.btn):hover { color: var(--maroon); }
@@ -154,7 +154,7 @@ button, input, select, textarea { font: inherit; }
 .offer-badge > svg { width: 26px; height: 26px; flex: 0 0 auto; }
 .offer-badge div { display: flex; flex-direction: column; line-height: 1.15; }
 .offer-badge span { font-size: 10px; font-weight: 800; letter-spacing: 3px; text-transform: uppercase; opacity: .75; }
-.offer-badge strong { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(18px, 2.4vw, 24px); line-height: 1.15; }
+.offer-badge strong { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(18px, 2.4vw, 32px); line-height: 1.15; }
 .freedom-heading { margin-top: 27px; line-height: .92; }
 .freedom-heading > div { font-size: clamp(48px, 9vw, 120px); font-weight: 800; letter-spacing: .01em; }
 .freedom-heading span { display: inline-block; min-height: 1.08em; margin-top: 8px; color: var(--gold-light); font-size: clamp(28px, 4.6vw, 58px); font-style: italic; font-weight: 500; transition: opacity .25s ease, transform .25s ease; }
@@ -207,6 +207,24 @@ button, input, select, textarea { font: inherit; }
 .offer-price > div { color: var(--gold-light); font-size: 68px; font-weight: 800; line-height: 1; }
 .offer-price .btn { margin-top: 16px; }
 
+.eligibility-section { background: var(--cream); border-block: 1px solid var(--line); }
+.eligibility-layout { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(270px, .55fr); gap: 44px; align-items: end; }
+.turnover-highlight { display: flex; align-items: center; gap: 18px; padding: 25px 26px; color: var(--cream); background: var(--maroon); border-radius: 5px; box-shadow: var(--shadow); }
+.turnover-icon { display: grid; place-items: center; width: 50px; height: 50px; flex: 0 0 auto; color: var(--maroon-900); background: var(--gold-light); border-radius: 50%; }
+.turnover-icon svg { width: 23px; height: 23px; }
+.turnover-highlight div { display: flex; flex-direction: column; }
+.turnover-highlight div > span { color: rgba(247, 241, 230, .72); font-size: 11px; font-weight: 750; letter-spacing: 1.5px; text-transform: uppercase; }
+.turnover-highlight strong { margin-top: 2px; color: var(--gold-light); font-size: clamp(31px, 4vw, 43px); line-height: 1.05; }
+.eligibility-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 42px; }
+.eligibility-card { display: flex; align-items: flex-start; gap: 16px; padding: 24px; background: var(--panel); border: 1px solid var(--line); border-radius: 4px; box-shadow: var(--shadow-sm); }
+.eligibility-card > svg { width: 22px; height: 22px; flex: 0 0 auto; margin-top: 2px; color: var(--accent-deep); }
+.eligibility-card strong { display: block; font-family: 'Playfair Display', Georgia, serif; font-size: 19px; line-height: 1.3; }
+.eligibility-card p { margin: 7px 0 0; color: var(--muted); font-size: 14.5px; }
+.eligibility-note { display: flex; align-items: center; gap: 14px; margin-top: 24px; padding: 18px 20px; background: rgba(170, 123, 81, .1); border: 1px solid var(--line-strong); border-radius: 4px; }
+.eligibility-note > svg { width: 20px; height: 20px; flex: 0 0 auto; color: var(--accent-deep); }
+.eligibility-note p { flex: 1; margin: 0; color: var(--muted); font-size: 13.5px; }
+.eligibility-note .btn { flex: 0 0 auto; }
+
 .dark-section { position: relative; overflow: hidden; background: var(--maroon-900); color: var(--cream); }
 .section-glow { position: absolute; inset: 0; opacity: .4; background: radial-gradient(800px 460px at 15% -10%, rgba(170, 123, 81, .4), transparent 60%); }
 .included-grid, .tracks-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 18px; margin-top: 48px; }
@@ -251,7 +269,7 @@ button, input, select, textarea { font: inherit; }
 .review-note-card blockquote { margin: 22px 0 0; padding: 14px 16px; color: var(--muted); background: rgba(170, 123, 81, .1); border-radius: 3px; font-size: 13px; font-style: italic; }
 .review-note-card blockquote svg { display: block; width: 15px; height: 15px; margin-bottom: 4px; color: var(--accent-deep); }
 
-.how-section { background: var(--cream-2); border-block: 1px solid var(--line); }
+.how-section { background: var(--panel); border-block: 1px solid var(--line); }
 .steps-grid { display: grid; grid-template-columns: repeat(4, 1fr); margin-top: 50px; overflow: hidden; background: var(--panel); border: 1px solid var(--line); border-radius: 4px; }
 .step-card { padding: 30px 26px; border-right: 1px solid var(--line); }
 .step-card:last-child { border-right: 0; }
@@ -349,7 +367,7 @@ button, input, select, textarea { font: inherit; }
 
 .site-footer { background: var(--maroon-900); color: rgba(247, 241, 230, .7); border-top: 1px solid rgba(247, 241, 230, .12); }
 .footer-inner { display: flex; flex-wrap: wrap; gap: 20px; align-items: center; justify-content: space-between; padding-top: 34px; padding-bottom: 34px; }
-.footer-inner img { width: auto; height: 30px; filter: brightness(0) invert(1); opacity: .85; }
+.footer-inner img { width: auto; height: 60px; filter: brightness(0) invert(1); opacity: .85; }
 .footer-inner p { margin: 0; font-size: 12.5px; }
 
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
@@ -362,7 +380,7 @@ button, input, select, textarea { font: inherit; }
 @media (max-width: 900px) {
   .desktop-nav { display: none; }
   .menu-button { display: inline-flex; }
-  .hero-grid, .strategy-grid, .deliverable-grid, .apply-grid, .about-grid { grid-template-columns: 1fr; }
+  .hero-grid, .strategy-grid, .deliverable-grid, .apply-grid, .about-grid, .eligibility-layout { grid-template-columns: 1fr; }
   .hero-grid { gap: 38px; padding-top: 52px; padding-bottom: 66px; }
   .strategy-grid { gap: 30px; }
   .offer-panel { grid-template-columns: 1fr; }
@@ -370,7 +388,8 @@ button, input, select, textarea { font: inherit; }
   .steps-grid { grid-template-columns: repeat(2, 1fr); }
   .step-card:nth-child(2) { border-right: 0; }
   .step-card:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
-  .fit-grid, .testimonials-grid { grid-template-columns: 1fr; }
+  .fit-grid, .testimonials-grid, .eligibility-grid { grid-template-columns: 1fr; }
+  .turnover-highlight { max-width: 420px; }
   .apply-side { position: static; }
 }
 
@@ -381,6 +400,8 @@ button, input, select, textarea { font: inherit; }
   .offer-panel { padding: 34px 28px; }
   .form-card { padding: 28px 22px 30px; }
   .footer-inner { align-items: flex-start; flex-direction: column; }
+  .eligibility-note { align-items: flex-start; flex-wrap: wrap; }
+  .eligibility-note .btn { width: 100%; }
 }
 
 @media (max-width: 560px) {
