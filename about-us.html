@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Dr. L. Ramachandran | Photographer, Filmmaker, Cinematographer, Author</title>
+<meta name="description" content="The journey of Dr. L. Ramachandran — a self-taught photographer, filmmaker, cinematographer and author from Valangaiman, Tamil Nadu, with 20+ years of visual storytelling across 50+ countries.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#fff;
+    --surface:#f5f5f5;
+    --surface-2:#fff;
+    --line:#e3e3e3;
+    --grey:#5A5A5A;
+    --text:#000;
+    --muted:#5A5A5A;
+    --gold:#000;
+    --gold-soft:rgba(0,0,0,.04);
+    --serif:'Cormorant Garamond',Georgia,serif;
+    --sans:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    --radius:14px;
+    --max:1180px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--text);font-family:var(--sans);font-weight:300;line-height:1.75;font-size:16.5px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  img{max-width:100%;display:block}
+  a{color:var(--gold)}
+  em{font-style:italic}
+  strong{font-weight:600;color:#000}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+
+  /* ---------- Image slot (shows a styled placeholder until a real image is present) ---------- */
+  .img{position:relative;overflow:hidden;border-radius:var(--radius);background:
+      radial-gradient(120% 90% at 20% 10%,rgba(0,0,0,.04),transparent 60%),
+      linear-gradient(160deg,#f3f3f3,#e7e7e7);
+    border:1px solid var(--line);aspect-ratio:4/3}
+  .img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2;transition:transform 1.2s ease}
+  .img:hover img{transform:scale(1.04)}
+  .img .ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:20px;text-align:center;color:var(--muted);font-size:13px;letter-spacing:.04em;z-index:1}
+  .img .ph svg{width:38px;height:38px;stroke:#5A5A5A;opacity:.8}
+  .img.portrait{aspect-ratio:4/5}
+  .img.cover{aspect-ratio:3/4}
+  .img.wide{aspect-ratio:16/9}
+
+  /* ---------- Hero ---------- */
+  .hero{position:relative;padding:120px 0 90px;overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 70% at 85% 30%,rgba(0,0,0,.035),transparent 70%);pointer-events:none}
+  .hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:center;position:relative}
+  .eyebrow{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);font-weight:500;display:inline-flex;align-items:center;gap:12px}
+  .eyebrow::before{content:"";width:34px;height:1px;background:var(--grey)}
+  h1{font-family:var(--serif);font-weight:600;font-size:clamp(46px,6.4vw,84px);line-height:1.02;margin:22px 0 14px;letter-spacing:-.01em}
+  h1 span{font-style:italic;font-weight:500;color:var(--grey)}
+  .roles{font-family:var(--serif);font-size:clamp(20px,2.2vw,26px);font-style:italic;color:var(--muted);margin-bottom:26px}
+  .hero p{color:#222;max-width:600px;margin-bottom:16px}
+  .hero .img{box-shadow:0 40px 80px -30px rgba(0,0,0,.3)}
+  .hero-frame{position:relative}
+  .hero-frame::after{content:"";position:absolute;inset:18px -18px -18px 18px;border:1px solid var(--grey);border-radius:var(--radius);opacity:1;z-index:-1}
+
+  /* ---------- Stats ---------- */
+  .stats{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--surface)}
+  .stats .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+  .stat{padding:34px 18px;text-align:center;border-right:1px solid var(--line)}
+  .stat:nth-child(4n){border-right:0}
+  .stat:nth-child(-n+4){border-bottom:1px solid var(--line)}
+  .stat b{display:block;font-family:var(--serif);font-size:48px;font-weight:600;color:var(--gold);line-height:1}
+  .stat span{display:block;margin-top:8px;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+
+  /* ---------- Section heads ---------- */
+  .section{padding:110px 0}
+  .head{text-align:center;max-width:760px;margin:0 auto 70px}
+  .head h2{font-family:var(--serif);font-size:clamp(36px,4.4vw,56px);font-weight:600;line-height:1.1;margin:16px 0 18px}
+  .head p{color:var(--muted)}
+
+  /* ---------- Lifeline timeline ---------- */
+  .lifeline{position:relative}
+  .lifeline .track{position:absolute;left:50%;top:0;bottom:0;width:2px;transform:translateX(-50%);background:var(--line)}
+  .lifeline .track i{position:absolute;left:0;top:0;width:100%;height:0;background:linear-gradient(var(--grey),#000)}
+  .chapter{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:center;margin-bottom:120px}
+  .chapter:last-child{margin-bottom:0}
+  .chapter .node{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:58px;height:58px;border-radius:50%;background:var(--bg);border:1px solid var(--grey);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:20px;font-weight:600;color:var(--gold);z-index:3;transition:background .5s,color .5s}
+  .chapter.in .node{background:var(--gold);color:var(--bg)}
+  .chapter:nth-child(odd) .media{order:2}
+  .chapter .label{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);font-weight:500}
+  .chapter h3{font-family:var(--serif);font-size:clamp(30px,3.2vw,42px);line-height:1.12;font-weight:600;margin:10px 0 18px}
+  .chapter p{color:#222;margin-bottom:14px}
+  .chapter .tag{display:inline-block;margin:4px 6px 0 0;padding:4px 12px;font-size:12.5px;border:1px solid var(--grey);border-radius:30px;color:var(--muted)}
+  .callout{margin-top:18px;padding:18px 22px;border-left:2px solid var(--grey);background:var(--gold-soft);border-radius:0 10px 10px 0;color:#222;font-size:15.5px}
+
+  /* reveal */
+  .reveal{opacity:0;transform:translateY(40px);transition:opacity 1s ease,transform 1s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  /* ---------- Books ---------- */
+  .alt{background:var(--surface)}
+  .books{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:30px}
+  .book{background:var(--surface-2);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;transition:transform .4s,border-color .4s}
+  .book:hover{transform:translateY(-6px);border-color:var(--grey)}
+  .book .img{border-radius:0;border:0;border-bottom:1px solid var(--line)}
+  .book .body{padding:22px 22px 24px;display:flex;flex-direction:column;flex:1}
+  .book h4{font-family:var(--serif);font-size:25px;font-weight:600;line-height:1.15;margin-bottom:10px}
+  .book p{font-size:14.5px;color:#222;line-height:1.7}
+  .book details{margin-top:12px}
+  .book summary{cursor:pointer;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);list-style:none}
+  .book summary::-webkit-details-marker{display:none}
+  .book summary::after{content:" +"}
+  .book details[open] summary::after{content:" –"}
+  .book details p{margin-top:10px}
+  .book .meta{margin-top:auto;padding-top:14px;font-size:12px;color:var(--muted);letter-spacing:.04em}
+
+  /* ---------- Exhibitions ---------- */
+  .ex-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:60px;align-items:start}
+  .ex-list{list-style:none;columns:2;column-gap:28px}
+  .ex-list li{break-inside:avoid;padding:14px 0 14px 22px;border-bottom:1px solid var(--line);position:relative;font-size:15px}
+  .ex-list li::before{content:"";position:absolute;left:0;top:23px;width:8px;height:8px;border:1px solid #000;transform:rotate(45deg)}
+  .ex-list small{display:block;color:var(--muted);font-size:12.5px}
+
+  /* ---------- Awards year timeline ---------- */
+  .years{position:relative;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:22px}
+  .year{background:var(--surface-2);border:1px solid var(--line);border-radius:var(--radius);padding:24px 24px 20px;position:relative;overflow:hidden}
+  .year::before{content:attr(data-year);position:absolute;right:-6px;top:-18px;font-family:var(--serif);font-size:96px;font-weight:700;color:rgba(0,0,0,.05);line-height:1}
+  .year h5{font-family:var(--serif);font-size:30px;color:var(--gold);font-weight:600;margin-bottom:8px}
+  .year ul{list-style:none}
+  .year li{font-size:14.5px;padding:7px 0;border-top:1px dashed var(--grey);color:#222}
+  .year li:first-child{border-top:0}
+  .year li small{color:var(--muted)}
+
+  /* ---------- Purpose ---------- */
+  .purpose{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:10px}
+  .purpose div{padding:26px 22px;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
+  .purpose b{display:block;font-family:var(--serif);font-size:30px;color:var(--gold);line-height:1;margin-bottom:12px}
+  .purpose p{font-size:14.5px;color:#222}
+
+  /* ---------- Testimonials ---------- */
+  .t-group{margin-bottom:56px}
+  .t-group h4{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-bottom:22px;font-weight:500}
+  .t-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:22px}
+  .quote{background:var(--surface-2);border:1px solid var(--line);border-radius:var(--radius);padding:28px 28px 24px;position:relative}
+  .quote::before{content:"\201C";position:absolute;top:-6px;left:20px;font-family:var(--serif);font-size:90px;color:var(--grey);opacity:1;line-height:1}
+  .quote p{font-family:var(--serif);font-size:20px;font-style:italic;line-height:1.5;color:#000;position:relative}
+  .quote footer{margin-top:18px;font-size:14px;color:#000;font-weight:500}
+  .quote footer span{display:block;color:var(--muted);font-weight:300;font-size:13px}
+
+  /* ---------- Vision ---------- */
+  .vision{text-align:center;padding:130px 0;background:radial-gradient(60% 80% at 50% 0%,rgba(0,0,0,.035),transparent 70%)}
+  .vision blockquote{font-family:var(--serif);font-size:clamp(28px,3.6vw,46px);font-style:italic;line-height:1.3;max-width:900px;margin:30px auto 18px}
+  .vision cite{color:var(--muted);font-style:normal;letter-spacing:.18em;text-transform:uppercase;font-size:13px}
+  .vision p{color:var(--muted);max-width:720px;margin:0 auto 14px}
+  .tagline{font-family:var(--serif);font-size:26px;font-style:italic;color:var(--text);margin:36px 0 0}
+  .latest{max-width:860px;margin:70px auto 0;display:grid;grid-template-columns:260px 1fr;gap:34px;text-align:left;align-items:center;padding:28px;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
+  .latest .label{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}
+  .latest h4{font-family:var(--serif);font-size:28px;margin:6px 0 10px;font-weight:600}
+  .latest p{margin:0;color:#222;max-width:none}
+
+  /* ---------- Responsive ---------- */
+  @media (max-width:960px){
+    .hero .wrap{grid-template-columns:1fr;gap:50px}
+    .hero-frame{max-width:440px}
+    .stats .wrap{grid-template-columns:repeat(2,1fr)}
+    .stat{border-right:1px solid var(--line)!important;border-bottom:1px solid var(--line)}
+    .stat:nth-child(2n){border-right:0!important}
+    .lifeline .track{left:28px}
+    .chapter{grid-template-columns:1fr;gap:26px;padding-left:76px;margin-bottom:80px}
+    .chapter .node{left:28px;top:0;transform:translate(-50%,0);width:48px;height:48px;font-size:17px}
+    .chapter:nth-child(odd) .media{order:0}
+    .ex-grid{grid-template-columns:1fr}
+    .purpose{grid-template-columns:repeat(2,1fr)}
+    .latest{grid-template-columns:1fr}
+  }
+  @media (max-width:600px){
+    .hero-frame::after{inset:12px -8px -12px 8px}
+    body{font-size:15.5px}
+    .wrap{padding:0 16px}
+    .hero{padding:80px 0 60px}
+    .section{padding:80px 0}
+    .stat b{font-size:38px}
+    .lifeline .track{left:20px}
+    .chapter{padding-left:52px}
+    .chapter .node{left:20px;width:40px;height:40px;font-size:15px}
+    .ex-list{columns:1}
+    .purpose{grid-template-columns:1fr}
+    .t-grid{grid-template-columns:1fr}
+  }
+  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+  /* ---------- Scroll-down buttons ---------- */
+  .hero,.section,.vision{position:relative}
+  .scroll-btn{position:absolute;left:50%;bottom:30px;transform:translateX(-50%);width:54px;height:54px;border-radius:50%;border:1px solid #000;background:#fff;color:#000;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:5;transition:background .3s,color .3s;animation:nudge 2.2s ease-in-out infinite}
+  .scroll-btn:hover,.scroll-btn:focus-visible{background:#000;color:#fff;outline:none}
+  .scroll-btn svg{width:22px;height:22px}
+  .scroll-btn.up svg{transform:rotate(180deg)}
+  @keyframes nudge{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,8px)}}
+  .hero{padding-bottom:130px}
+  .section{padding-bottom:150px}
+  .vision{padding-bottom:160px}
+  @media (max-width:600px){.scroll-btn{width:46px;height:46px;bottom:22px}.section{padding-bottom:120px}.hero{padding-bottom:110px}}
+  @media (prefers-reduced-motion:reduce){.scroll-btn{animation:none}}
+</style>
+</head>
+<body>
+
+<!-- Reusable placeholder icon (inlined into each image slot by script below) -->
+<template id="cam"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l2-3h6l2 3h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="14" r="4"/></svg></template>
+
+<!-- =================== HERO / ABOUT ME =================== -->
+<header class="hero">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">About Me</span>
+      <h1>Dr. L. <span>Ramachandran</span></h1>
+      <div class="roles">Photographer. Filmmaker. Cinematographer. Author.</div>
+      <p>Dr. L. Ramachandran is a self-taught photographer, filmmaker, cinematographer, director, documentarian and author whose work is rooted in visual storytelling, culture, people and the preservation of stories through powerful imagery.</p>
+      <p>Hailing from Valangaiman near Thiruvarur, Tamil Nadu, he has built a creative journey spanning more than two decades. His work has taken him across more than 50 countries, where he has documented people, cultures, traditions, art, architecture, sporting events and significant moments through photography and film.</p>
+      <p>His distinctive approach combines observation, emotion, light and composition to create photographs and films that go beyond documentation — capturing the character of a moment, the expression of a person and the cultural context surrounding a story.</p>
+    </div>
+    <div class="hero-frame reveal">
+      <figure class="img portrait" data-label="Portrait of L. Ramachandran"><img src="https://lramachandran.com/wp-content/uploads/2026/09/lRAMACHANDRAN.png" alt="Portrait of Dr. L. Ramachandran" style="object-position:center top"></figure>
+    </div>
+  </div>
+</header>
+
+<!-- =================== STATS =================== -->
+<section class="stats">
+  <div class="wrap">
+    <div class="stat"><b data-count="20">20</b><span>Years of practice</span></div>
+    <div class="stat"><b data-count="50" data-suffix="+">50+</b><span>Countries</span></div>
+    <div class="stat"><b data-count="35">35</b><span>Galleries</span></div>
+    <div class="stat"><b data-count="35">35</b><span>International awards</span></div>
+    <div class="stat"><b data-count="25">25</b><span>Magazines &amp; forums</span></div>
+    <div class="stat"><b data-count="15" data-suffix="+">15+</b><span>Books authored</span></div>
+    <div class="stat"><b data-count="300" data-suffix="+">300+</b><span>Creators mentored</span></div>
+    <div class="stat"><b data-count="2">2</b><span>Honorary doctorates</span></div>
+  </div>
+</section>
+
+<!-- =================== LIFELINE / JOURNEY =================== -->
+<section class="section" id="journey">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">The Lifeline</span>
+      <h2>A Journey Rooted in Storytelling</h2>
+      <p>For L. Ramachandran, photography is more than the act of capturing an image. It has been a lifelong journey of exploration, documentation, mentorship and social contribution — a way of preserving people, places, emotions and cultural memory.</p>
+    </div>
+
+    <div class="lifeline">
+      <div class="track"><i></i></div>
+
+      <!-- 01 -->
+      <article class="chapter reveal">
+        <div class="node">01</div>
+        <div class="media"><figure class="img" data-label="Early days — Valangaiman, Tamil Nadu"><img src="images/01-roots-valangaiman.jpg" alt="Early work from Valangaiman, Tamil Nadu"></figure></div>
+        <div class="text">
+          <span class="label">The Beginning</span>
+          <h3>Roots in Valangaiman</h3>
+          <p>A self-taught photographer from Valangaiman near Thiruvarur, he set out with a camera and a curiosity about people and their stories — a journey that would take him across more than 50 countries.</p>
+          <p>Rather than restricting himself to a single photographic identity, he explored the entire spectrum of visual storytelling — from forests and mountains to temples and heritage sites, from sporting arenas to fashion studios, and from public figures to ordinary people whose stories deserve to be seen.</p>
+          <div>
+            <span class="tag">Fashion</span><span class="tag">Glamour</span><span class="tag">Fine Art</span><span class="tag">Sports</span><span class="tag">Architecture</span><span class="tag">Temple Heritage</span><span class="tag">Wildlife</span><span class="tag">Portraits</span><span class="tag">Celebrity</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 02 -->
+      <article class="chapter reveal">
+        <div class="node">02</div>
+        <div class="media"><figure class="img" data-label="Transgender models — Medley of Art, Miami"><img src="images/02-responsibility.jpg" alt="Transgender community photoshoot for Medley of Art"></figure></div>
+        <div class="text">
+          <span class="label">Social Contribution</span>
+          <h3>Photography as a Responsibility</h3>
+          <p>For Ramachandran, the camera is not only a creative instrument. It is a medium through which society can be documented, represented and remembered — giving visibility to communities and individuals who may otherwise remain outside the mainstream visual narrative.</p>
+          <p>He has photographed more than 25 individuals from the transgender and third-gender community, presenting them not through stereotypes, but through identity, dignity, confidence, personality and beauty.</p>
+          <div class="callout">20 transgender people were showcased as professional fashion models at an international gallery showcase in Miami, as part of <em>Medley of Art</em>.</div>
+        </div>
+      </article>
+
+      <!-- 03 -->
+      <article class="chapter reveal">
+        <div class="node">03</div>
+        <div class="media"><figure class="img" data-label="Folk artists — Therukoothu / Gyeongju Art Fair 2023"><img src="images/03-folk-artists.jpg" alt="Folk artists documented by L. Ramachandran"></figure></div>
+        <div class="text">
+          <span class="label">Culture &amp; Heritage</span>
+          <h3>Supporting Traditional and Folk Artists</h3>
+          <p>He has documented the lives, art forms, costumes, expressions and performances of folk artists and traditional performers — through photographic bodies of work, exhibitions and calendar projects that help preserve a fading culture.</p>
+          <p>The <strong>Gyeongju Art Fair 2023</strong> in South Korea showcased folk artists specialising in Mayilaatam, Oyilaatam, Therukoothu, Siva Thaandavam and Karagattam. The proceeds were granted to the folk artists, with coverage in publications such as <em>The Korea Times</em>.</p>
+          <p>An exclusive Therukoothu calendar — his first self-made calendar — was launched in association with actor <strong>Vijay Sethupathi</strong>, drawing national press attention to the hardships of these artistes.</p>
+        </div>
+      </article>
+
+      <!-- 04 -->
+      <article class="chapter reveal">
+        <div class="node">04</div>
+        <div class="media"><figure class="img" data-label="Mentoring workshop with students"><img src="images/04-mentor.jpg" alt="L. Ramachandran mentoring young photographers"></figure></div>
+        <div class="text">
+          <span class="label">Giving Back</span>
+          <h3>A Mentor to the Next Generation</h3>
+          <p>He has trained <strong>300+ photographers and visual creators</strong>, personally mentoring them and uplifting their lives — many have gone on to build their own careers in photography and filmmaking.</p>
+          <p>His guidance goes beyond operating a camera, covering visual storytelling, lighting, composition, cinematography, filmmaking, creative direction and working in the real-world media industry.</p>
+          <div class="callout">“Knowledge becomes meaningful when it is shared.”</div>
+        </div>
+      </article>
+
+      <!-- 05 -->
+      <article class="chapter reveal">
+        <div class="node">05</div>
+        <div class="media"><figure class="img" data-label="Empty streets of Chennai during lockdown"><img src="images/05-chennai-to-madras.jpg" alt="Chennai during the COVID-19 lockdown"></figure></div>
+        <div class="text">
+          <span class="label">COVID-19 Lockdown</span>
+          <h3>Chennai to Madras</h3>
+          <p>When one of India's busiest cities fell unusually quiet, Ramachandran began documenting Chennai without its usual crowds, traffic and movement.</p>
+          <p>The result was <em>Chennai to Madras</em>, a coffee table book capturing the city's streets, architecture, landmarks and atmosphere — a visual historical record of a moment that could otherwise exist only in people's memories. As a fine art photographer, he revealed a different side of the city's architecture during an unprecedented time.</p>
+        </div>
+      </article>
+
+      <!-- 06 -->
+      <article class="chapter reveal">
+        <div class="node">06</div>
+        <div class="media"><figure class="img" data-label="Medley of Art — colour & set design"><img src="images/06-medley-of-art.jpg" alt="Medley of Art fine art photography"></figure></div>
+        <div class="text">
+          <span class="label">20 Years in the Making</span>
+          <h3>Medley of Art</h3>
+          <p>A mesmerising visual exploration that brings together colour theory, fine art photography, set design and costume in an ambitious multidisciplinary celebration of art.</p>
+          <p><em>Medley of Art</em> represents 20 years of effort. The first copy has already sold successfully, and the second edition is being made with improved additions. The project has been recognised by the International Photography Awards, PX3 Paris and the Tokyo International Foto Awards.</p>
+        </div>
+      </article>
+
+      <!-- 07 -->
+      <article class="chapter reveal">
+        <div class="node">07</div>
+        <div class="media"><figure class="img" data-label="On set — Director of Photography"><img src="images/07-cinema.jpg" alt="L. Ramachandran on a film set"></figure></div>
+        <div class="text">
+          <span class="label">Director · Cinematographer</span>
+          <h3>From Photography to Cinema</h3>
+          <p>As a Director, Cinematographer and Director of Photography, he has worked on advertising campaigns, feature films, documentaries and music-related productions.</p>
+          <p>Cinematographer of the films <em>Saayavanam</em> and <em>Love and War</em>, and the documentaries <em>The Land of Festival</em> and <em>Coimbatore — Journey through Culture Landscape</em>. Director and DoP for the TVC campaign of AVR Swarna Mahal Jewellers.</p>
+          <p>Second-unit cinematographer with Ravi Varman ISC, including the Odisha State Anthem video <em>Bande Utkala Janani</em>; promotional photographer for 30 films including <em>Garudan</em>, <em>Teenz</em>, <em>Iravin Nizhal</em>, <em>Thaimaaman</em> and projects connected with <em>Indian 2</em>.</p>
+        </div>
+      </article>
+
+      <!-- 08 -->
+      <article class="chapter reveal">
+        <div class="node">08</div>
+        <div class="media"><figure class="img" data-label="FIH Hockey Junior World Cup / Chess Olympiad"><img src="images/08-sport.jpg" alt="Sports photography by L. Ramachandran"></figure></div>
+        <div class="text">
+          <span class="label">Sports Photography</span>
+          <h3>Documenting Sport Through Emotion</h3>
+          <p>Rather than simply recording the action, he focuses on the people and emotions surrounding sport — athletes, coaches, audiences, celebrations, preparation and the defining moments that give an event its identity.</p>
+          <div>
+            <span class="tag">44th FIDE Chess Olympiad</span><span class="tag">Men's Asian Champions Trophy Hockey</span><span class="tag">Squash World Cup</span><span class="tag">Khelo India</span><span class="tag">Chief Minister's Trophy</span><span class="tag">National Track Cycling</span><span class="tag">FIH Hockey Junior World Cup 2025</span><span class="tag">WTA 250 Chennai Open 2025</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 09 -->
+      <article class="chapter reveal">
+        <div class="node">09</div>
+        <div class="media"><figure class="img" data-label="Gallery exhibition abroad"><img src="images/09-global.jpg" alt="International art fair exhibition"></figure></div>
+        <div class="text">
+          <span class="label">Exhibitions &amp; Media</span>
+          <h3>A Global Artistic Presence</h3>
+          <p>His solo and group exhibitions have taken his work to South Korea, Singapore, Thailand, Croatia, Germany, Italy and Spain. His work has been featured in 25 magazines and forums including Playboy, Vogue, Maxim and GQ.</p>
+          <p>Media coverage includes BBC News, The Hindu, The Times of India, Korea Times and publications in Croatia and Italy — bringing his subjects to audiences far beyond their immediate communities.</p>
+        </div>
+      </article>
+
+      <!-- 10 -->
+      <article class="chapter reveal">
+        <div class="node">10</div>
+        <div class="media"><figure class="img" data-label="Guinness World Record — 950 faces painted"><img src="images/10-records.jpg" alt="Guinness World Record for Most Faces Painted"></figure></div>
+        <div class="text">
+          <span class="label">Milestones</span>
+          <h3>Records &amp; Honours</h3>
+          <p>A <strong>Guinness World Record</strong> for Most Faces Painted (950) in January 2019, a Unique World Record and an Indian Achiever Award.</p>
+          <p>Two honorary doctorates — International Tamil University (2018) and St Andrews Theological University (2019). Best Documentary Film at the Norway Tamil Film Festival, Best Cinematographer at the Tamil Nadu Film Festival, and a National Award in the Best Jewellery category.</p>
+        </div>
+      </article>
+
+      <!-- 11 -->
+      <article class="chapter reveal">
+        <div class="node">11</div>
+        <div class="media"><figure class="img" data-label="Government / institutional assignment"><img src="images/11-institutions.jpg" alt="Public and institutional photography project"></figure></div>
+        <div class="text">
+          <span class="label">Public Projects</span>
+          <h3>Working With Institutions</h3>
+          <p>His portfolio includes assignments with Tamil Nadu Tourism, the Department of Art &amp; Culture, Department of Archaeology, Department of Handlooms and Textiles, Greater Chennai Corporation, Madras High Court, DIPR Tamil Nadu and the HR&amp;CE Department.</p>
+          <p>He contributed as a photographer to <em>Porunai</em>, authored by Thiru M.K. Stalin, former Chief Minister of Tamil Nadu.</p>
+        </div>
+      </article>
+
+      <!-- 12 -->
+      <article class="chapter reveal">
+        <div class="node">12</div>
+        <div class="media"><figure class="img" data-label="Behind the camera — across mediums"><img src="images/12-across-mediums.jpg" alt="L. Ramachandran at work"></figure></div>
+        <div class="text">
+          <span class="label">One Visual Language</span>
+          <h3>A Creative Practice Across Mediums</h3>
+          <p>Photography, filmmaking, cinematography, documentary work, publishing and art are not separate pursuits in his practice. They are different ways of telling stories.</p>
+          <p>Whether photographing an athlete in competition, documenting a centuries-old tradition, creating a cinematic frame or building a coffee table book, his work is driven by the same objective: <strong>to observe, interpret and preserve.</strong></p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- =================== BOOKS =================== -->
+<section class="section alt" id="books">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">Author</span>
+      <h2>Creating Visual Archives Through Books</h2>
+      <p>His coffee table books combine photography, documentation, research and storytelling — several created for the Government of Tamil Nadu and major public initiatives.</p>
+    </div>
+
+    <div class="books">
+      <article class="book reveal">
+        <figure class="img cover" data-label="Home of Chess — cover"><img src="images/books/home-of-chess.jpg" alt="Home of Chess book cover"></figure>
+        <div class="body">
+          <h4>Home of Chess</h4>
+          <p>A visual tribute to the 44th FIDE Chess Olympiad, documenting 1,600+ players from 180+ countries over 11 days.</p>
+          <details><summary>Read more</summary><p>Launched by the Honourable Prime Minister of India and the Chief Minister of Tamil Nadu, the book celebrates Chennai's association with chess and serves as an educational and visual archive. It was received and appreciated by FIDE President Arkady Dvorkovich.</p></details>
+        </div>
+      </article>
+
+      <article class="book reveal">
+        <figure class="img cover" data-label="Illam Thedi Kalvi — cover"><img src="images/books/illam-thedi-kalvi.jpg" alt="Illam Thedi Kalvi book cover"></figure>
+        <div class="body">
+          <h4>Illam Thedi Kalvi</h4>
+          <p>Documents Tamil Nadu's initiative to address children's learning gaps after pandemic school closures.</p>
+          <details><summary>Read more</summary><p>Through photographs and stories of students, parents, volunteers and educators, it presents the human dimension of the programme. Officially released by the Chief Minister of Tamil Nadu.</p></details>
+        </div>
+      </article>
+
+      <article class="book reveal">
+        <figure class="img cover" data-label="Chennai to Madras — cover"><img src="images/books/chennai-to-madras.jpg" alt="Chennai to Madras book cover"></figure>
+        <div class="body">
+          <h4>Chennai to Madras</h4>
+          <p>A visual record of Chennai and Tamil Nadu created during the COVID-19 lockdown — cities, heritage, architecture and living culture.</p>
+          <details><summary>Read more</summary><p>Preserved in state libraries as a cultural and educational resource. Features a message from the Honourable Chief Minister of Tamil Nadu and was released in the presence of N. Ram, M. S. Shanmugam IAS, V. Balakrishnan IPS and actor Vijay Sethupathi.</p></details>
+        </div>
+      </article>
+
+      <article class="book reveal">
+        <figure class="img cover" data-label="Immortal Bronzes — cover"><img src="images/books/immortal-bronzes.jpg" alt="Immortal Bronzes book cover"></figure>
+        <div class="body">
+          <h4>Immortal Bronzes</h4>
+          <p>A photographic documentation of Tamil Nadu's celebrated bronze sculpture tradition — form, craftsmanship and ornamentation.</p>
+          <details><summary>Read more</summary><p>A lasting visual archive of Tamil Nadu's bronze heritage and a valuable reference for those interested in sculpture, art history and traditional craftsmanship.</p></details>
+        </div>
+      </article>
+
+      <article class="book reveal">
+        <figure class="img cover" data-label="Khakhi Mounts — cover"><img src="images/books/khakhi-mounts.jpg" alt="Khakhi Mounts book cover"></figure>
+        <div class="body">
+          <h4>Khakhi Mounts</h4>
+          <p>The history, evolution and everyday life of Chennai's mounted police — people, horses, training and heritage.</p>
+          <details><summary>Read more</summary><p>Officially released by the Honourable Deputy Chief Minister of Tamil Nadu and the then Director General of Police, Thiru. Shankar Jiwal IPS.</p></details>
+        </div>
+      </article>
+
+      <article class="book reveal">
+        <figure class="img cover" data-label="Medley of Art — cover"><img src="images/books/medley-of-art.jpg" alt="Medley of Art book cover"></figure>
+        <div class="body">
+          <h4>Medley of Art</h4>
+          <p>A culmination of textures, techniques and concepts exploring colour, lighting, aesthetics and visual composition.</p>
+          <details><summary>Read more</summary><p>An educational resource for students, photographers and artists, recognised by the International Photography Awards, Prix de la Photographie Paris (PX3) and Tokyo International Foto Awards (TIFA), and exhibited internationally.</p></details>
+        </div>
+      </article>
+
+      <article class="book reveal">
+        <figure class="img cover" data-label="Spirit of Hockey — cover"><img src="images/books/spirit-of-hockey.jpg" alt="Spirit of Hockey book cover"></figure>
+        <div class="body">
+          <h4>Spirit of Hockey</h4>
+          <p>A chronicle of the 7th Men's Asian Champions Trophy 2023, which brought international hockey back to Chennai after 16 years.</p>
+          <details><summary>Read more</summary><p>Captures the intensity, skill and emotion of six leading Asian teams over 10 days. The literary content and photography were appreciated by FIH President Tayyab Ikram.</p></details>
+        </div>
+      </article>
+
+      <article class="book reveal">
+        <figure class="img cover" data-label="Khelo India 2024 — cover"><img src="images/books/khelo-india-2024.jpg" alt="Khelo India 2024 Future Is Here book cover"></figure>
+        <div class="body">
+          <h4>Khelo India 2024 — <em>Future Is Here</em></h4>
+          <p>The 6th Khelo India Youth Games 2024, held across four cities in Tamil Nadu.</p>
+          <details><summary>Read more</summary><p>Released by Union Minister Anurag Thakur and Tamil Nadu Sports Minister Udhayanidhi Stalin — a record of India's youth sports movement and the aspirations of a new generation of athletes.</p></details>
+        </div>
+      </article>
+
+      <article class="book reveal">
+        <figure class="img cover" data-label="Kalam Namadhe — cover"><img src="images/books/kalam-namadhe.jpg" alt="Kalam Namadhe book cover"></figure>
+        <div class="body">
+          <h4>Kalam Namadhe</h4>
+          <p>The official coffee table book of the Chief Minister's Trophy Games 2023 — India's largest state-led sporting event with 11 lakh+ participants.</p>
+          <details><summary>Read more</summary><p>A visual celebration of youth, talent and grassroots empowerment, capturing the power of sport to ignite dreams and foster inclusion.</p></details>
+        </div>
+      </article>
+
+      <article class="book reveal">
+        <figure class="img cover" data-label="Chief Minister's Trophy — cover"><img src="images/books/cm-trophy.jpg" alt="Chief Minister's Trophy book cover"></figure>
+        <div class="body">
+          <h4>Chief Minister's Trophy</h4>
+          <p>Tamil Nadu's large-scale state sporting programme across district, regional and state-level competitions.</p>
+          <details><summary>Read more</summary><p>Celebrates sporting participation and the opportunities created for athletes across Tamil Nadu.</p></details>
+        </div>
+      </article>
+
+      <article class="book reveal">
+        <figure class="img cover" data-label="Gopuram — cover"><img src="images/books/gopuram.jpg" alt="Gopuram book cover"></figure>
+        <div class="body">
+          <h4>Gopuram</h4>
+          <p>The towering gateways of 120 temples across Tamil Nadu, photographed over more than five years.</p>
+          <details><summary>Read more</summary><p>Uses aerial photography, elevated perspectives and unconventional viewpoints to reveal the geometry, symmetry and sculptural detail of these monumental structures.</p></details>
+        </div>
+      </article>
+
+      <article class="book reveal">
+        <figure class="img cover" data-label="Coimbatore — cover"><img src="images/books/coimbatore.jpg" alt="Coimbatore A Journey Through Culture and Landscapes book cover"></figure>
+        <div class="body">
+          <h4>Coimbatore — A Journey Through Culture and Landscapes</h4>
+          <p>The geographical, cultural, ecological and industrial richness of Coimbatore district.</p>
+          <details><summary>Read more</summary><p>Built through fieldwork across mountains, forests, rivers, villages, industrial areas and tribal settlements. Released by the Collector of Coimbatore, Pavan Kumar G. Giriyappanavar IAS.</p></details>
+        </div>
+      </article>
+
+      <article class="book reveal">
+        <figure class="img cover" data-label="Love All — cover"><img src="images/books/love-all.jpg" alt="Love All WTA Chennai Open 2025 book cover"></figure>
+        <div class="body">
+          <h4>Love All — WTA Chennai Open 2025</h4>
+          <p>The official coffee table book of one of India's premier international women's sporting events.</p>
+          <details><summary>Read more</summary><p>Preserves the tournament's legacy through documentary photography, historical narratives and editorial features — highlighting perseverance, equality and fair play.</p></details>
+        </div>
+      </article>
+
+      <article class="book reveal">
+        <figure class="img cover" data-label="Echoes of Virudhunagar — cover"><img src="images/books/echoes-of-virudhunagar.jpg" alt="Echoes of Virudhunagar book cover"></figure>
+        <div class="body">
+          <h4>Echoes of Virudhunagar</h4>
+          <p>The district's heritage, communities, landscapes and industries, documented across seasons over eight months.</p>
+          <details><summary>Read more</summary><p>Released by the Honourable Chief Minister of Tamil Nadu, created in the context of NITI Aayog's Aspirational Districts Programme.</p></details>
+        </div>
+      </article>
+
+      <article class="book reveal">
+        <figure class="img cover" data-label="A New Beginning — cover"><img src="images/books/a-new-beginning.jpg" alt="A New Beginning book cover"></figure>
+        <div class="body">
+          <h4>A New Beginning</h4>
+          <p>The official coffee table book marking 100 days in office of the TVK Government, Tamil Nadu.</p>
+          <span class="meta">Latest release · 2026</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- =================== EXHIBITIONS =================== -->
+<section class="section" id="exhibitions">
+  <div class="wrap ex-grid">
+    <div class="reveal">
+      <span class="eyebrow">Exhibition Journey</span>
+      <h2 style="font-family:var(--serif);font-size:clamp(34px,4vw,50px);line-height:1.1;margin:16px 0 20px;font-weight:600">Art Fairs &amp; Exhibitions</h2>
+      <p style="color:var(--muted);margin-bottom:28px">Exhibited at art fairs, galleries, cultural institutions and photography exhibitions across Asia, Europe and beyond.</p>
+      <figure class="img wide" data-label="Art fair booth / exhibition view"><img src="images/exhibitions.jpg" alt="Exhibition of L. Ramachandran's work"></figure>
+    </div>
+    <ul class="ex-list reveal">
+      <li>Bangkok Art Fair<small>Thailand</small></li>
+      <li>Art Apart Fair<small>Singapore</small></li>
+      <li>Busan International Art Fair<small>South Korea</small></li>
+      <li>Seoul International Art Fair<small>South Korea</small></li>
+      <li>Singapore Bank Art Fair<small>Singapore</small></li>
+      <li>Gwangju Art Fair<small>South Korea</small></li>
+      <li>Korea Galleries Art Fair<small>South Korea</small></li>
+      <li>Human Art Festival<small>South Korea</small></li>
+      <li>Gyeongju Art Fair<small>South Korea</small></li>
+      <li>Asian Men's Hockey Champions Trophy Photography Exhibition<small>2023</small></li>
+      <li>Khelo India Photography Exhibition<small>2024</small></li>
+      <li>Coimbatore — A Journey Through Landscape<small>Coimbatore Collector's Office · 2026</small></li>
+      <li>Chennai to Madras — Spirit of Madras Day<small>Anna Centenary Library, Chennai · 2026</small></li>
+      <li>World Tourism Day Expo<small>Coimbatore · 2026</small></li>
+      <li>9th COVA Expo<small>Kovai Kondattam Gallery · 2026</small></li>
+    </ul>
+  </div>
+</section>
+
+<!-- =================== AWARDS (year-wise lifeline) =================== -->
+<section class="section alt" id="awards">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">Awards &amp; Recognition</span>
+      <h2>Fifteen Years of Recognition</h2>
+      <p>Recognised for contributions to photography, contemporary art, filmmaking and visual storytelling — from Los Angeles to Florence to Chennai.</p>
+    </div>
+    <div class="years">
+      <div class="year reveal" data-year="2011"><h5>2011</h5><ul><li>IPA — International Photography Awards <small>· Los Angeles</small></li><li>Photographer's Forum Magazine <small>· United States</small></li></ul></div>
+      <div class="year reveal" data-year="2012"><h5>2012</h5><ul><li>STC Best Student Award <small>· United States</small></li></ul></div>
+      <div class="year reveal" data-year="2013"><h5>2013</h5><ul><li>STC Best Student Award <small>· Santorini</small></li><li>TEA Award <small>· India</small></li></ul></div>
+      <div class="year reveal" data-year="2014"><h5>2014</h5><ul><li>STC Best Lighting (Hensel) <small>· Miami</small></li></ul></div>
+      <div class="year reveal" data-year="2016"><h5>2016</h5><ul><li>HP Award</li><li>B&amp;W Spider Award</li></ul></div>
+      <div class="year reveal" data-year="2017"><h5>2017</h5><ul><li>ATIM's Top 60 Masters' Contemporary Artist Award <small>· Florence</small></li><li>B&amp;W Spider Award</li><li>PX3 Award</li><li>TIFA Award <small>· Silver Winner</small></li></ul></div>
+      <div class="year reveal" data-year="2018"><h5>2018</h5><ul><li>Thiruvalluvar Award</li><li>Best Contemporary Art Photographer <small>· International Human Peace Commission</small></li><li>Best Fashion Art Photographer <small>· SIFA, India</small></li><li>Honorary Doctorate <small>· International Tamil University</small></li></ul></div>
+      <div class="year reveal" data-year="2019"><h5>2019</h5><ul><li>Honorary Doctorate <small>· St. Andrews Theological University</small></li><li>Behind the Success of Transgender <small>· Special Award</small></li><li>Guinness World Record</li><li>Indian Achiever Award</li><li>Unique World Record</li></ul></div>
+      <div class="year reveal" data-year="2022"><h5>2022</h5><ul><li>London Photography Award <small>· Gold, Folk Art</small></li></ul></div>
+      <div class="year reveal" data-year="2023"><h5>2023</h5><ul><li>Tamil Kalaimagal Award</li></ul></div>
+      <div class="year reveal" data-year="2024"><h5>2024</h5><ul><li>Best Cinematographer <small>· TNFF, <em>Saayavanam</em></small></li><li>Best Documentary Film <small>· NTFF, <em>Land of Festival</em></small></li></ul></div>
+      <div class="year reveal" data-year="2026"><h5>2026</h5><ul><li>Madras Day <small>· TN Department of Tourism Award</small></li><li>Lifetime Achievement Award <small>· Rotary Club</small></li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== LARGER PURPOSE =================== -->
+<section class="section" id="purpose">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">Preserving What Time May Erase</span>
+      <h2>A Photographer With a Larger Purpose</h2>
+      <p>If we do not document the present, future generations may never truly understand it. His photography operates at multiple levels — as art, as documentation, as cultural preservation and as social storytelling.</p>
+    </div>
+    <div class="purpose">
+      <div class="reveal"><b>01</b><p>Give visibility to underrepresented communities.</p></div>
+      <div class="reveal"><b>02</b><p>Document transgender and third-gender individuals with dignity and creative representation.</p></div>
+      <div class="reveal"><b>03</b><p>Support folk artists and traditional cultural practitioners.</p></div>
+      <div class="reveal"><b>04</b><p>Preserve architecture, temples, heritage and cultural traditions.</p></div>
+      <div class="reveal"><b>05</b><p>Mentor hundreds of emerging photographers and filmmakers.</p></div>
+      <div class="reveal"><b>06</b><p>Document extraordinary moments in contemporary history.</p></div>
+      <div class="reveal"><b>07</b><p>Create long-form visual archives through coffee table books and documentaries.</p></div>
+      <div class="reveal"><b>08</b><p>Take Indian culture, people and stories to national and international audiences.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== TESTIMONIALS =================== -->
+<section class="section alt" id="testimonials">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">Testimonials</span>
+      <h2>In Their Words</h2>
+      <p>Appreciation from leading names in cinema, the arts, public service and international photography.</p>
+    </div>
+
+    <div class="t-group">
+      <h4>Cinema &amp; the Arts</h4>
+      <div class="t-grid">
+        <blockquote class="quote reveal"><p>Happy to see the high creative and fantasy designs in L. Ramachandran's photographs.</p><footer>Padmashri Thottatharani</footer></blockquote>
+        <blockquote class="quote reveal"><p>His ability to capture moments was exceptional, and his photos not only brought our characters to life but did so with remarkable aesthetic and realism.</p><footer>Vijay Sethupathi<span>Actor</span></footer></blockquote>
+        <blockquote class="quote reveal"><p>L. Ramachandran's keen eye for detail and ability to capture emotion in every frame truly elevated the value of my film.</p><footer>Anil Kumar<span>Film Director</span></footer></blockquote>
+        <blockquote class="quote reveal"><p>L. Ramachandran's lighting patterns are spellbounding and the visuals that he creates are magical.</p><footer>Ravi Varman ISC<span>Cinematographer</span></footer></blockquote>
+        <blockquote class="quote reveal"><p>I have to say well done ... love his handling of colours and filming ... Feels best in your lighting pattern.</p><footer>Vijay Amritraj<span>International Tennis Player &amp; Film Producer</span></footer></blockquote>
+        <blockquote class="quote reveal"><p>I've been consistently impressed by L. Ramachandran's cinematic prowess. His skill in capturing stories through film is truly exceptional and extraordinary.</p><footer>N. Ram<span>Editor, The Hindu</span></footer></blockquote>
+        <blockquote class="quote reveal"><p>As an artist, photographer, and filmmaker, his ability to extend his artistic wings across these mediums is truly inspiring.</p><footer>Maniam Selvan<span>Artist</span></footer></blockquote>
+      </div>
+    </div>
+
+    <div class="t-group">
+      <h4>Government &amp; Public Service</h4>
+      <div class="t-grid">
+        <blockquote class="quote reveal"><p>L. Ramachandran has a unique sensibility towards visuals that transforms into frames and actions. I am very happy to see his artistic wings spreading to several other art forms.</p><footer>R. Thirunaavukkarasu, IPS<span>SP Security Branch CID-I, Tamil Nadu</span></footer></blockquote>
+        <blockquote class="quote reveal"><p>It is astounding to see his constant art quests and the success that followed throughout his journey.</p><footer>M.S. Shanmugam, IAS<span>Secretary to the Chief Minister of Tamil Nadu</span></footer></blockquote>
+      </div>
+    </div>
+
+    <div class="t-group" style="margin-bottom:0">
+      <h4>International Photography &amp; Fashion</h4>
+      <div class="t-grid">
+        <blockquote class="quote reveal"><p>It appears that you have made a significant creative breakthrough and come up with something that is very unique, very interesting.</p><footer>Gary Cole<span>International Photographer &amp; Director</span></footer></blockquote>
+        <blockquote class="quote reveal"><p>The collection of the art photographs are extraordinary, well composed, intriguing and surprisingly impressive with shadow and light.</p><footer>Warrant Satt<span>Creative Director, Fashion TV</span></footer></blockquote>
+        <blockquote class="quote reveal"><p>If any photographer would have even 20% of the will power that L. Ramachandran has, there would be many more better photographers in this world... Period.</p><footer>Jarmo Pohjaniemi<span>Photography Director</span></footer></blockquote>
+        <blockquote class="quote reveal"><p>Happy to see a successful long journey of yours, L. Ramachandran, to transform into an International photographer.</p><footer>Byron Newman<span>Photography Editor, Fashion TV</span></footer></blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== VISION =================== -->
+<section class="vision" id="vision">
+  <div class="wrap">
+    <span class="eyebrow reveal">The Vision</span>
+    <blockquote class="reveal">“A photograph should not merely show the world as it is. It should preserve its stories, reveal its people and create a meaningful legacy for the future.”</blockquote>
+    <cite class="reveal">— L. Ramachandran</cite>
+    <p class="reveal" style="margin-top:40px">From a self-taught photographer from Valangaiman to an internationally recognised photographer, filmmaker, cinematographer and author, his journey continues to be shaped by curiosity, creativity and a commitment to telling stories through the visual medium.</p>
+    <p class="tagline reveal">Every frame has a story. His work is about making that story last.</p>
+
+    <div class="latest reveal">
+      <figure class="img" data-label="A New Beginning — 100 days book"><img src="images/latest-new-beginning.jpg" alt="A New Beginning coffee table book release"></figure>
+      <div>
+        <span class="label">Most Recently · 2026</span>
+        <h4>A New Beginning</h4>
+        <p>Worked on the TVK Government campaign for the Tamil Nadu Assembly Elections 2026 with the Voice of Commons, and created <em>A New Beginning</em> — the official coffee table book released by Tamil Nadu Chief Minister C. Joseph Vijay to mark 100 days in office of his government.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Image slots: add placeholder label/icon; remove <img> if file is missing so the placeholder shows
+  const cam = document.getElementById('cam').innerHTML;
+  document.querySelectorAll('figure.img').forEach(f => {
+    const ph = document.createElement('div');
+    ph.className = 'ph';
+    ph.innerHTML = cam + '<span>' + (f.dataset.label || 'Image') + '</span>';
+    f.prepend(ph);
+    const img = f.querySelector('img');
+    if (img) {
+      img.loading = 'lazy';
+      const kill = () => img.remove();
+      if (img.complete && img.naturalWidth === 0) kill(); else img.addEventListener('error', kill);
+    }
+  });
+
+  // Scroll reveal
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: .15 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Lifeline progress fill
+  const lifeline = document.querySelector('.lifeline'), fill = document.querySelector('.lifeline .track i');
+  const onScroll = () => {
+    const r = lifeline.getBoundingClientRect(), vh = window.innerHeight;
+    const p = Math.min(1, Math.max(0, (vh * 0.55 - r.top) / r.height));
+    fill.style.height = (p * 100) + '%';
+  };
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+  // Stat count-up
+  const so = new IntersectionObserver(es => es.forEach(e => {
+    if (!e.isIntersecting) return;
+    const el = e.target, end = +el.dataset.count, suf = el.dataset.suffix || '';
+    let t0 = null;
+    const step = ts => { t0 ??= ts; const k = Math.min(1, (ts - t0) / 1400);
+      el.textContent = Math.round(end * (1 - Math.pow(1 - k, 3))) + suf;
+      if (k < 1) requestAnimationFrame(step); };
+    requestAnimationFrame(step); so.unobserve(el);
+  }), { threshold: .6 });
+  document.querySelectorAll('[data-count]').forEach(el => so.observe(el));
+
+  // Scroll-down button centred at the bottom of every section → jumps to the next section
+  const arrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg>';
+  const blocks = [...document.querySelectorAll('body > header.hero, body > section:not(.stats)')];
+  blocks.forEach((sec, i) => {
+    const next = blocks[i + 1];
+    const btn = document.createElement('button');
+    btn.className = 'scroll-btn' + (next ? '' : ' up');
+    btn.type = 'button';
+    btn.innerHTML = arrow;
+    btn.setAttribute('aria-label', next ? 'Scroll to next section' : 'Back to top');
+    btn.addEventListener('click', () => (next || blocks[0]).scrollIntoView({ behavior: 'smooth', block: 'start' }));
+    sec.appendChild(btn);
+  });
+</script>
+</body>
+</html>
