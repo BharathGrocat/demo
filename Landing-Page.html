@@ -3,8 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Custodians of Change | Next generation of Indian wealth | Entrust Family Office</title>
-<meta name="description" content="A Grant Thornton Bharat and Entrust Family Office study of how India's family business leaders are approaching values, governance, succession and the family office. Request the September 2026 report.">
+<title>Custodians of Change: Next generation of Indian wealth | Entrust Family Office</title>
+<meta name="description" content="How are India’s family business leaders approaching values, governance and succession? Download the Grant Thornton Bharat and Entrust Family Office study.">
+<meta property="og:title" content="Custodians of Change: Next generation of Indian wealth">
+<meta property="og:description" content="How are India’s family business leaders approaching values, governance and succession? Download the Grant Thornton Bharat and Entrust Family Office study.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
@@ -53,6 +55,26 @@ h3{font-size:1.6rem}
 p{margin:0 0 1em}
 .lede{font-size:1.2rem;color:var(--muted);max-width:60ch}
 
+/* Takeaways */
+.takeaways{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;column-gap:64px;border-top:1px solid var(--line)}
+.takeaways li{display:grid;grid-template-columns:118px 1fr;gap:20px;align-items:baseline;padding:28px 0;border-bottom:1px solid var(--line)}
+.takeaways .fig{font-family:var(--serif);font-weight:600;font-size:2.7rem;line-height:1;color:var(--accent)}
+.takeaways .fig.word{font-size:1.9rem}
+.takeaways h3{font-family:var(--sans);font-weight:500;font-size:1.08rem;line-height:1.4;color:var(--ink);margin-bottom:6px}
+.takeaways p{margin:0;color:var(--muted);font-size:.97rem}
+@media (max-width:860px){.takeaways{grid-template-columns:1fr}.takeaways li{grid-template-columns:88px 1fr}}
+/* Sreepriya quote */
+.voice{background:var(--wine);color:#F5ECE6;padding:clamp(72px,9vw,120px) 0}
+.voice-grid{display:grid;grid-template-columns:auto 1fr;gap:clamp(24px,5vw,72px);align-items:start}
+.voice .mark{font-family:var(--serif);font-size:clamp(7rem,14vw,11rem);line-height:.7;color:var(--bronze)}
+.voice blockquote p{font-family:var(--serif);font-size:clamp(1.55rem,2.8vw,2.3rem);line-height:1.3;max-width:34ch;margin-bottom:.6em}
+.voice blockquote p.lead{font-size:clamp(2rem,4vw,3.1rem);line-height:1.12}
+.voice footer{margin-top:28px;font-size:.95rem;color:#D4BFB4}
+.voice footer strong{display:block;color:#F5ECE6;font-weight:500;font-size:1.1rem}
+@media (max-width:640px){.voice-grid{grid-template-columns:1fr}.voice .mark{line-height:.5}}
+.dl-row{display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-top:22px}
+.dl-meta{font-size:.88rem;color:var(--muted)}
+.about-gt{margin-top:18px}
 /* Header */
 header.site{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .bar{display:flex;align-items:center;justify-content:space-between;gap:16px;height:72px}
@@ -187,12 +209,12 @@ footer.site{border-top:1px solid var(--line);padding:56px 0 40px;font-size:.92re
     <a class="brand" href="https://www.entrustfamilyoffice.com/" aria-label="Entrust Family Office home">
       <svg viewBox="0 0 34 40" aria-hidden="true">
         <g fill="var(--accent)"><circle cx="11" cy="2.6" r="2.4"/><circle cx="17" cy="2.6" r="2.4"/><circle cx="23" cy="2.6" r="2.4"/></g>
-        <path d="M3 8h28v6L10 22l21 8v8H3v-6l16-6" fill="none" stroke="var(--accent)" stroke-width="3.2" stroke-linejoin="miter"/>
+        <path d="M3 8h28v6L10 22l21 8v8H3v-6l16-6" fill="none" stroke="var(--accent)" stroke-width="3.2"/>
       </svg>
       <span class="word">ENTRUST<small>FAMILY OFFICE</small></span>
     </a>
     <span class="partner">In partnership with Grant Thornton Bharat</span>
-    <a class="btn" href="#get">Get the report</a>
+    <a class="btn" href="#download">Download the report</a>
   </div>
 </header>
 
@@ -202,25 +224,22 @@ footer.site{border-top:1px solid var(--line);padding:56px 0 40px;font-size:.92re
     <div>
       <h1>Custodians of change</h1>
       <p class="sub">Next generation of Indian wealth</p>
-      <p class="lede">India is entering a decisive decade of intergenerational transition. We spoke with family business leaders and wealth custodians across three generations to understand how they invest, decide, prepare their successors and build the family offices that will carry their legacy forward.</p>
+      <p class="lede">India is entering a decisive decade of intergenerational transition. We spoke with family business leaders and wealth custodians across three generations, representing wealth from INR 100 crore to INR 10,000 crore, to understand how they invest, decide, prepare their successors and build the family offices that will carry their legacy forward.</p>
       <div class="cta-row">
-        <a class="btn" href="#get">Request the full report</a>
-        <a class="btn ghost" href="#findings">See the key findings</a>
+        <a class="btn" href="#download">Download the report</a>
+        <a class="btn ghost" href="#takeaways">Read the key takeaways</a>
       </div>
       <div class="meta">
+        <div><strong>Grant Thornton Bharat &amp; Entrust Family Office</strong>A joint study</div>
         <div><strong>September 2026</strong>Published</div>
-        <div><strong>INR 100 – 10,000 Cr</strong>Family wealth represented</div>
-        <div><strong>3 generations</strong>Founders to grandchildren</div>
+        <div><strong>30 pages</strong>Full report</div>
       </div>
     </div>
     <div class="hero-art" aria-hidden="true">
       <svg class="rings" viewBox="0 0 400 400">
-        <circle class="r" cx="200" cy="200" r="190"/>
-        <circle class="r" cx="200" cy="200" r="168"/>
-        <circle class="r" cx="200" cy="200" r="152"/>
-        <circle class="r" cx="200" cy="200" r="124"/>
-        <circle class="r" cx="200" cy="200" r="104"/>
-        <circle class="r" cx="200" cy="200" r="78"/>
+        <circle class="r" cx="200" cy="200" r="190"/><circle class="r" cx="200" cy="200" r="168"/>
+        <circle class="r" cx="200" cy="200" r="152"/><circle class="r" cx="200" cy="200" r="124"/>
+        <circle class="r" cx="200" cy="200" r="104"/><circle class="r" cx="200" cy="200" r="78"/>
         <circle class="r" cx="200" cy="200" r="58"/>
         <g class="grow"><circle class="g" cx="200" cy="200" r="40"/></g>
         <g class="grow"><circle class="g" cx="200" cy="200" r="114"/></g>
@@ -234,32 +253,33 @@ footer.site{border-top:1px solid var(--line);padding:56px 0 40px;font-size:.92re
   </div>
 </section>
 
-<section class="band">
-  <div class="wrap band-grid">
-    <h2>Not simply inheriting wealth, but inheriting responsibility</h2>
-    <div>
-      <p>We explored not just how families invest, but how they think about values, governance, succession, risk and purpose. The conversations reveal a perspective that goes beyond preserving and growing what has been built, towards rethinking what wealth is for and how it can be stewarded for the generations to come.</p>
-      <div class="authors">
-        <div><strong>Sreepriya NS</strong>Co-Founder &amp; CEO, Entrust Family Office</div>
-        <div><strong>Pallavi Joshi Bakhru</strong>Partner and Family Office Leader, Grant Thornton Bharat</div>
-      </div>
+<section class="block" id="takeaways" style="padding-top:clamp(32px,4vw,56px)">
+  <div class="wrap">
+    <div class="head">
+      <h2>Eight takeaways from the study</h2>
+      <p class="lede" style="margin-top:16px">The next generation is not simply inheriting wealth; it is inheriting responsibility. Here is what that looks like in practice.</p>
     </div>
+    <ol class="takeaways">
+      <li><span class="fig">78%</span><div><h3>Preservation is the shared instinct, but no longer the whole story.</h3><p>Rank protecting family wealth, values and continuity among their top priorities, and 46% also want to grow and diversify beyond the core business.</p></div></li>
+      <li><span class="fig">68%</span><div><h3>Today’s custodians see the whole picture.</h3><p>Say their generation’s defining difference is the ability to step back and view family wealth as a whole portfolio, not just the operating business.</p></div></li>
+      <li><span class="fig">56%</span><div><h3>Growth, on the family’s own terms.</h3><p>Put long-term capital appreciation and compounding first. Families favour calculated risk, and global investing is now mainstream, led by public equities, private markets and listed funds (44%).</p></div></li>
+      <li><span class="fig">46%</span><div><h3>The third generation would rather build than allocate.</h3><p>Of third-generation leaders, given a billion dollars and no rules, would buy businesses or controlling stakes first, against 8% of founders.</p></div></li>
+      <li><span class="fig word">3 models</span><div><h3>Power is being redistributed, not given away.</h3><p>Founders favour a family-led model with advisors; the second generation prefers professional management with oversight; the third settles on a hybrid.</p></div></li>
+      <li><span class="fig">54%</span><div><h3>Succession is a cycle, not a slow drift.</h3><p>Of third-generation families say the next generation already influences or co-leads decisions, up from 18% in the second. Nearly half expect to be running the business within four to five years.</p></div></li>
+      <li><span class="fig">30%</span><div><h3>Direction exists, documentation lags.</h3><p>Have committed succession to a documented plan, although about two-thirds of families have a sense of direction.</p></div></li>
+      <li><span class="fig">24%</span><div><h3>The family office is becoming an institution of governance.</h3><p>Set one up to shift from running the business to managing a diversified portfolio. Starting over, families would first invest in technology and reporting systems.</p></div></li>
+    </ol>
   </div>
 </section>
 
-<section class="block" id="findings">
-  <div class="wrap">
-    <div class="head">
-      <h2>Five shifts shaping how India's families steward wealth</h2>
-      <p class="lede">Across every theme, one pattern repeats: structure is replacing instinct, and the next generation is stepping forward rather than drifting away.</p>
-    </div>
-    <div class="shifts">
-      <div class="shift"><div class="fig">78%</div><h3>From preservation to purpose</h3><p>Rank protecting family wealth, values and continuity as a top priority. Almost half now also want to grow beyond the core business.</p></div>
-      <div class="shift"><div class="fig">56%</div><h3>Growth, on the family's terms</h3><p>Put long-term capital appreciation and compounding first. Calculated risk wins over high-stakes bets, and global investing is now mainstream.</p></div>
-      <div class="shift"><div class="fig">3 models</div><h3>Power is being redistributed</h3><p>Founders favour family-led with advisors, the second generation professional management, and the third a hybrid of both.</p></div>
-      <div class="shift"><div class="fig">54%</div><h3>The succession cycle</h3><p>Of third-generation families say their next generation already influences or co-leads major decisions.</p></div>
-      <div class="shift"><div class="fig">24%</div><h3>The family office evolves</h3><p>Set one up to shift from running the operating business to a diversified portfolio. It is maturing into an institution of governance.</p></div>
-    </div>
+<section class="voice" aria-label="Quote from Sreepriya NS">
+  <div class="wrap voice-grid">
+    <span class="mark" aria-hidden="true">“</span>
+    <blockquote>
+      <p class="lead">Good governance is not tested when everyone agrees. It is tested when they don’t.</p>
+      <p>The families who navigate this well have answered the hard questions before disagreement arrives: who owns what, who runs what, and how differences get resolved. That is the real purpose of structure: not to replace judgement, but to ensure no family is inventing the rules in the middle of a crisis.</p>
+      <footer><strong>Sreepriya NS</strong>Co-Founder &amp; CEO, Entrust Family Office</footer>
+    </blockquote>
   </div>
 </section>
 
@@ -272,9 +292,7 @@ footer.site{border-top:1px solid var(--line);padding:56px 0 40px;font-size:.92re
         <line class="axis" x1="40" y1="300" x2="600" y2="300"/>
         <line class="axis" x1="40" y1="190" x2="600" y2="190" stroke-dasharray="2 6"/>
         <line class="axis" x1="40" y1="80" x2="600" y2="80" stroke-dasharray="2 6"/>
-        <text class="lbl" x="40" y="74">60%</text>
-        <text class="lbl" x="40" y="184">30%</text>
-        <!-- y = 300 - v*3.667 : 36→168, 18→234, 54→102, 8→271 -->
+        <text class="lbl" x="40" y="74">60%</text><text class="lbl" x="40" y="184">30%</text>
         <path class="not" d="M110 234 C 200 234, 230 168, 320 168 S 450 271, 530 271"/>
         <path class="inf" d="M110 168 C 200 168, 230 234, 320 234 S 440 102, 530 102"/>
         <g fill="var(--accent)"><circle cx="110" cy="168" r="7"/><circle cx="320" cy="234" r="7"/><circle cx="530" cy="102" r="7"/></g>
@@ -287,8 +305,7 @@ footer.site{border-top:1px solid var(--line);padding:56px 0 40px;font-size:.92re
     </figure>
     <div>
       <p class="pull">Families hold the reins tightest during the second handover, then loosen their grip by the third.</p>
-      <p>The assumption that each generation drifts further from the business does not hold. Involvement dips in the second generation as families lean on structure, then rises sharply in the third.</p>
-      <p>Nearly half of third-generation leaders expect to be actively running and scaling the business within four to five years, driven less by obligation than by the opportunity to take it into its next phase of growth.</p>
+      <p>The assumption that each generation drifts further from the business does not hold. Involvement dips in the second generation as families lean on structure and governance, then rises sharply in the third, driven less by obligation than by the opportunity to take the business into its next phase of growth.</p>
     </div>
   </div>
 </section>
@@ -296,62 +313,35 @@ footer.site{border-top:1px solid var(--line);padding:56px 0 40px;font-size:.92re
 <section class="block">
   <div class="wrap">
     <div class="head">
-      <h2>Inside the report</h2>
-      <p class="lede">Six chapters on how custodians invest, decide, prepare the next generation and build the institutions around their wealth.</p>
-    </div>
-    <ol class="chapters">
-      <li><span class="no">01</span><div><h3>Changing priorities across generations</h3><p>The language of wealth is shifting from accumulation to stewardship, and from instinct to intention.</p></div><div class="stat"><b>68%</b>say their generation views wealth as a whole portfolio</div></li>
-      <li><span class="no">02</span><div><h3>Balancing risk with long-term growth</h3><p>Neither aggressive nor overly cautious: where families invest abroad, and what they would do with a billion dollars and no rules.</p></div><div class="stat"><b>46%</b>of third-gen leaders would buy businesses outright first</div></li>
-      <li><span class="no">03</span><div><h3>The changing rules of decision-making</h3><p>From a single voice to a shared process, and the tightropes between control and professionalisation.</p></div><div class="stat"><b>~20%</b>say the head of family still makes the final call</div></li>
-      <li><span class="no">04</span><div><h3>The next generation's role in decision-making</h3><p>Who holds the reins today, where families stand on succession, and the role leaders expect to play next.</p></div><div class="stat"><b>30%</b>have committed succession to a documented plan</div></li>
-      <li><span class="no">05</span><div><h3>Building the family office</h3><p>What triggers a family office, what it should prioritise, and what families would design differently today.</p></div><div class="stat"><b>17%</b>would start with better technology and reporting</div></li>
-      <li><span class="no">06</span><div><h3>Custodians of change: The Archetypes</h3><p>Four distinct ways families are navigating the transition from one generation's wealth to the next one's stewardship.</p></div><div class="stat"><b>4</b>archetypes, each with a clear next step</div></li>
-    </ol>
-  </div>
-</section>
-
-<section class="block" style="padding-top:0">
-  <div class="wrap">
-    <div class="head">
       <h2>Which custodian is your family?</h2>
-      <p class="lede">Shaped by governance, next-generation involvement and long-term priorities. The bar shows each archetype's share of the families we spoke with.</p>
+      <p class="lede" style="margin-top:16px">Our conversations reveal four distinct archetypes, shaped by how families approach governance, next-generation involvement and long-term priorities.</p>
     </div>
-    <div class="share" role="img" aria-label="Legacy Custodians 30%, Institutional Leaders 30%, Governance Architects 24%, Enterprise Stewards 16%">
+    <div class="share" role="img" aria-label="Legacy Custodians about 30%, Institutional Leaders 30%, Governance Architects 24%, Enterprise Stewards 16%">
       <i style="width:30%;background:#5D0023"></i><i style="width:30%;background:#8A3A55"></i><i style="width:24%;background:#A67C52"></i><i style="width:16%;background:#D9C2B4"></i>
     </div>
     <div class="arch">
-      <article style="--c:#5D0023"><div class="pct">Nearly 30%</div><h3>The Legacy Custodians</h3><em>Protecting what has been built</em><p>Continuity lives in relationships and shared values, with authority still resting with the current generation as they prepare successors.</p></article>
-      <article style="--c:#8A3A55"><div class="pct">30%</div><h3>The Institutional Leaders</h3><em>Governance and leadership reinforce one another</em><p>Family judgement and professional discipline together, so good decisions depend less on any one person.</p></article>
-      <article style="--c:#A67C52"><div class="pct">24%</div><h3>The Governance Architects</h3><em>Building the structure before successors arrive</em><p>Governance, decision frameworks and long-term planning are in place, often before the next generation is ready to lead.</p></article>
-      <article style="--c:#D9C2B4"><div class="pct">16%</div><h3>The Enterprise Stewards</h3><em>Leading the business, with structure yet to follow</em><p>The next generation shapes the business before fully inheriting it. Succession is a gradual transfer of trust.</p></article>
+      <article style="--c:#5D0023"><div class="pct">About 30%</div><h3>The Legacy Custodians</h3><em>Protecting what has been built</em><p>Continuity lives in relationships and shared values, with authority still resting with the current generation.</p></article>
+      <article style="--c:#8A3A55"><div class="pct">30%</div><h3>The Institutional Leaders</h3><em>Governance and leadership reinforce one another</em><p>Good decisions depend less on any one person.</p></article>
+      <article style="--c:#A67C52"><div class="pct">24%</div><h3>The Governance Architects</h3><em>Building the structure before the successors arrive</em><p>Governance, decision frameworks and long-term planning are in place before the next generation is ready to lead.</p></article>
+      <article style="--c:#D9C2B4"><div class="pct">16%</div><h3>The Enterprise Stewards</h3><em>Leading the business, with structure yet to follow</em><p>Succession is a gradual transfer of trust.</p></article>
     </div>
+    <div class="dl-row" style="margin-top:40px"><a class="btn ghost" href="#download">Find out which archetype fits your family</a></div>
   </div>
 </section>
 
-<section class="voices">
-  <div class="wrap">
-    <h2>Voices from the study</h2>
-    <div class="quotes">
-      <blockquote><p>Good governance is not tested when everyone agrees. It is tested when they don't.</p><footer><strong>Sreepriya NS</strong>Co-Founder &amp; CEO, Entrust Family Office</footer></blockquote>
-      <blockquote><p>True wealth custodianship is not only about preserving and compounding capital. It is about building an institution beyond the founder.</p><footer><strong>Ajit Issac</strong>Founder &amp; Chairman, Quess Corp</footer></blockquote>
-      <blockquote><p>Successful succession begins long before leadership or ownership changes hands.</p><footer><strong>Pallavi Joshi Bakhru</strong>Partner and Family Office Leader, Grant Thornton Bharat</footer></blockquote>
-    </div>
-  </div>
-</section>
-
-<section class="block" id="get">
+<section class="block" id="download" style="background:var(--surface)">
   <div class="wrap get">
     <div>
-      <h2>Request the full report</h2>
-      <p class="lede" style="margin-top:16px">Share a few details and we will email you the complete 30-page study.</p>
+      <h2>Download the full report</h2>
+      <p class="lede" style="margin-top:16px">The complete 30-page study, free to download.</p>
       <ul class="inside">
-        <li>Generational data on priorities, risk and global allocation</li>
+        <li>Generational data on priorities and risk</li>
         <li>How families govern decisions and plan succession</li>
-        <li>What triggers a family office and what to build differently</li>
+        <li>What triggers a family office, and what to build differently</li>
         <li>The four custodian archetypes and their next steps</li>
       </ul>
     </div>
-    <form id="lead" novalidate>
+    <form id="lead" novalidate style="background:var(--bg)">
       <div class="fields">
         <div class="row">
           <label>Name *<input name="name" autocomplete="name" required><span class="err">Enter your name.</span></label>
@@ -361,20 +351,18 @@ footer.site{border-top:1px solid var(--line);padding:56px 0 40px;font-size:.92re
           <label>Email *<input type="email" name="email" autocomplete="email" required><span class="err">Enter a valid email address.</span></label>
           <label>Phone number *<input type="tel" name="phone" autocomplete="tel" required pattern="[0-9+\-\s()]{8,}"><span class="err">Enter a valid phone number.</span></label>
         </div>
-        <div class="row">
-          <label>Role
-            <select name="role"><option value="">Choose one</option><option>Founder / first generation</option><option>Second generation</option><option>Third generation or later</option><option>Family office professional</option><option>Advisor</option><option>Other</option></select>
-          </label>
-          <label>City / Country<input name="city" autocomplete="address-level2"></label>
-        </div>
-        <label>Anything you'd like to discuss? (optional)<textarea name="message" rows="3"></textarea></label>
+        <label>Role
+          <select name="role"><option value="">Choose one</option><option>Founder / first generation</option><option>Second generation</option><option>Third generation or later</option><option>Family office professional</option><option>Advisor</option><option>Other</option></select>
+        </label>
         <input type="hidden" name="utm_source"><input type="hidden" name="utm_medium"><input type="hidden" name="utm_campaign"><input type="hidden" name="gclid"><input type="hidden" name="page_url">
-        <button class="btn" type="submit">Request the report</button>
-        <p class="fine">By submitting, you agree that Entrust Family Office may contact you about this report and related services. We do not share your details.</p>
+        <button class="btn" type="submit">Download the report</button>
+        <p class="fine">PDF, [file size]. By downloading, you agree that Entrust Family Office may contact you about this report and related services. We do not share your details.</p>
       </div>
       <div class="thanks" role="status" aria-live="polite">
-        <h3>Request received</h3>
-        <p>We'll email the report to <strong id="sent-to"></strong> shortly. If you'd like to talk sooner, write to <a href="mailto:reachus@entrust.co.in">reachus@entrust.co.in</a> or call <a href="tel:+919739744747">+91 97397 44747</a>.</p>
+        <h3>Thank you</h3>
+        <p>Your download has started. A copy is also on its way to <strong id="sent-to"></strong>.</p>
+        <div class="dl-row"><a class="btn" id="dl-link" href="#" download>Download the report (PDF)</a><span class="dl-meta">Didn’t start? Use this button.</span></div>
+        <p style="margin-top:22px">If you’d like to discuss what this means for your family, write to <a href="mailto:reachus@entrust.co.in">reachus@entrust.co.in</a> or call <a href="tel:+919739744747">+91 97397 44747</a>.</p>
       </div>
     </form>
   </div>
@@ -385,12 +373,14 @@ footer.site{border-top:1px solid var(--line);padding:56px 0 40px;font-size:.92re
   <div class="wrap">
     <div class="foot">
       <div>
-        <h4>Entrust Family Office</h4>
-        <p>A boutique multi-family office founded in 2013, supporting families with both investment and non-investment needs on a conflict-free, fee-based model. Pan-India presence with $2Bn+ in assets under advisory.</p>
+        <h4>About Entrust Family Office</h4>
+        <p>A boutique multi-family office founded in 2013, supporting families with both investment and non-investment needs on a conflict-free, fee-based model. Pan-India presence, $2Bn+ in assets under advisory.</p>
+        <h4 class="about-gt">About Grant Thornton Bharat</h4>
+        <p>A founding member firm of the Grant Thornton international network, with 22 offices and 14,000+ people in India.</p>
       </div>
       <div>
-        <h4>Get in touch</h4>
-        <p><a href="mailto:reachus@entrust.co.in">reachus@entrust.co.in</a><br><a href="tel:+919739744747">+91 97397 44747</a></p>
+        <h4>Contact</h4>
+        <p><a href="mailto:reachus@entrust.co.in">reachus@entrust.co.in</a><br><a href="tel:+919739744747">+91 97397 44747</a><br><a href="mailto:GTBharat@in.gt.com">GTBharat@in.gt.com</a></p>
         <p>24, 4th Floor, 1st Cross, Magrath Road, Bangalore 560025</p>
       </div>
       <div>
@@ -398,18 +388,20 @@ footer.site{border-top:1px solid var(--line);padding:56px 0 40px;font-size:.92re
         <p><a href="https://www.entrustfamilyoffice.com/">entrustfamilyoffice.com</a><br><a href="https://www.grantthornton.in/">grantthornton.in</a><br><a href="https://www.entrustfamilyoffice.com/privacy-policy/">Privacy policy</a></p>
       </div>
     </div>
-    <p class="disclaimer">Custodians of change is a joint thought-leadership publication by Grant Thornton Bharat LLP and Entrust Family Office, for general information only. It does not constitute investment, financial, legal, tax, accounting or succession advice. Findings are based on conversations with a select group of Indian family wealth custodians, are illustrative in nature and are not derived from a statistically validated survey. Quoted views are those of the individuals and not necessarily of their organisations. Readers should obtain tailored advice from a qualified professional before acting.</p>
+    <p class="disclaimer">Custodians of change is a joint thought-leadership publication by Grant Thornton Bharat LLP and Entrust Family Office, for general information only, and does not constitute investment, financial, legal, tax or succession advice. Findings are based on conversations with a select group of Indian family wealth custodians, are illustrative in nature and are not derived from a statistically validated survey.</p>
   </div>
 </footer>
 
 <script>
 (function(){
-  // Carry campaign parameters into the form so each lead records its source.
-  var form=document.getElementById('lead');
+  // Replace with the hosted PDF URL before going live.
+  var REPORT_URL='[INSERT-HOSTED-PDF-URL]';
+  var form=document.getElementById('lead'), link=document.getElementById('dl-link');
+  var ready=/^https?:/.test(REPORT_URL);
+  if(ready) link.href=REPORT_URL;
   var q=new URLSearchParams(location.search);
   ['utm_source','utm_medium','utm_campaign','gclid'].forEach(function(k){if(q.get(k))form.elements[k].value=q.get(k);});
   form.elements.page_url.value=location.href;
-
   form.addEventListener('submit',function(e){
     e.preventDefault();
     var ok=true;
@@ -420,9 +412,10 @@ footer.site{border-top:1px solid var(--line);padding:56px 0 40px;font-size:.92re
       if(!valid&&ok){el.focus();ok=false;}
     });
     if(!ok)return;
-    // TODO: send the form data to your form handler / CRM endpoint here.
+    // TODO: send the form data to your form handler / CRM here.
     document.getElementById('sent-to').textContent=form.elements.email.value;
     form.classList.add('done');
+    if(ready) window.location.href=REPORT_URL;
   });
   form.addEventListener('input',function(e){var l=e.target.closest('label');if(l&&l.classList.contains('invalid')&&e.target.checkValidity())l.classList.remove('invalid');});
 })();
