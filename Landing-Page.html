@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Custodians of Change | Next generation of Indian wealth | Entrust Family Office</title>
+<meta name="description" content="A Grant Thornton Bharat and Entrust Family Office study of how India's family business leaders are approaching values, governance, succession and the family office. Request the September 2026 report.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --maroon:#5D0023;
+  --wine:#3E0018;
+  --blush:#E8D8CE;
+  --blush-soft:#F5ECE6;
+  --bronze:#A67C52;
+  --paper:#FFFFFF;
+  --ink:#2B1A20;
+  --muted:#6E5A60;
+  --line:#E3D3C9;
+  --bg:var(--paper);
+  --surface:var(--blush-soft);
+  --accent:var(--maroon);
+  --on-accent:#FFFFFF;
+  --serif:"Cormorant Garamond", "Iowan Old Style", Georgia, "Times New Roman", serif;
+  --sans:"Jost", "Avenir Next", "Segoe UI", Helvetica, Arial, sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#1E1115; --surface:#2A171D; --ink:#F2E7E1; --muted:#C2ADA5;
+    --line:#45282F; --accent:#E8D8CE; --on-accent:#3E0018; --bronze:#C9A27A;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#1E1115; --surface:#2A171D; --ink:#F2E7E1; --muted:#C2ADA5;
+  --line:#45282F; --accent:#E8D8CE; --on-accent:#3E0018; --bronze:#C9A27A;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 80px)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:300;font-size:1.0625rem;line-height:1.65;-webkit-font-smoothing:antialiased}
+img,svg{max-width:100%}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--bronze);outline-offset:3px}
+.wrap{width:min(1160px,100% - 48px);margin-inline:auto}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.1;margin:0;color:var(--accent)}
+h2{font-size:clamp(2rem,4vw,3rem)}
+h3{font-size:1.6rem}
+p{margin:0 0 1em}
+.lede{font-size:1.2rem;color:var(--muted);max-width:60ch}
+
+/* Header */
+header.site{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;height:72px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand svg{width:34px;height:40px;flex:none}
+.brand .word{font-family:var(--sans);font-weight:500;letter-spacing:.32em;color:var(--bronze);font-size:1rem;line-height:1}
+.brand .word small{display:block;font-weight:400;letter-spacing:.18em;font-size:.6rem;margin-top:4px}
+.partner{font-size:.85rem;color:var(--muted)}
+.btn{display:inline-block;font-family:var(--sans);font-weight:500;font-size:.95rem;letter-spacing:.02em;background:var(--accent);color:var(--on-accent);border:1px solid var(--accent);padding:13px 26px;border-radius:2px;text-decoration:none;cursor:pointer;transition:background .2s,color .2s}
+.btn:hover{background:transparent;color:var(--accent)}
+.btn.ghost{background:transparent;color:var(--accent)}
+.btn.ghost:hover{background:var(--accent);color:var(--on-accent)}
+@media (max-width:720px){.partner{display:none}.bar .btn{padding:10px 16px;font-size:.85rem}}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;padding:clamp(56px,9vw,120px) 0 clamp(56px,8vw,100px)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(3.2rem,8.5vw,6.6rem);font-weight:600;letter-spacing:-.01em;line-height:.95}
+.hero .sub{font-family:var(--serif);font-style:italic;font-size:clamp(1.5rem,3vw,2.1rem);color:var(--bronze);margin:18px 0 26px}
+.hero .meta{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:34px;font-size:.92rem;color:var(--muted)}
+.hero .meta strong{display:block;font-weight:500;color:var(--ink);font-size:1rem}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:8px}
+.rings{width:100%;height:auto}
+.rings circle{fill:none}
+.rings .r{stroke:var(--line);stroke-width:1}
+.rings .g{stroke:var(--bronze);stroke-width:1.25}
+.rings .core{fill:var(--accent)}
+.rings text{font-family:var(--sans);font-size:13px;fill:var(--muted)}
+.rings .grow{transform-origin:200px 200px;animation:grow 1.6s cubic-bezier(.2,.7,.2,1) both}
+.rings .grow:nth-of-type(2){animation-delay:.25s}.rings .grow:nth-of-type(3){animation-delay:.5s}
+@keyframes grow{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:scale(1)}}
+@media (max-width:860px){.hero-grid{grid-template-columns:1fr}.hero-art{max-width:340px}}
+
+/* Intro band */
+.band{background:var(--accent);color:var(--on-accent);padding:clamp(56px,7vw,88px) 0}
+.band h2{color:var(--on-accent)}
+.band-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px}
+.band p{color:color-mix(in srgb,var(--on-accent) 82%,transparent)}
+.authors{display:flex;flex-wrap:wrap;gap:28px;margin-top:28px;font-size:.92rem}
+.authors strong{display:block;font-weight:500;font-size:1.05rem}
+@media (max-width:860px){.band-grid{grid-template-columns:1fr;gap:24px}}
+
+section.block{padding:clamp(64px,8vw,112px) 0}
+.head{max-width:720px;margin-bottom:48px}
+.head h2{margin-bottom:16px}
+
+/* Shifts */
+.shifts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));border-top:1px solid var(--line)}
+.shift{padding:28px 24px 28px 0;border-bottom:1px solid var(--line)}
+.shift h3{font-size:1.45rem;margin-bottom:10px}
+.shift p{font-size:.97rem;color:var(--muted);margin:0}
+.shift .fig{font-family:var(--serif);font-size:2.4rem;color:var(--bronze);line-height:1;margin-bottom:12px}
+
+/* Succession cycle (signature) */
+.cycle{background:var(--surface)}
+.cycle-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:56px;align-items:center}
+.chart{width:100%;height:auto;display:block}
+.chart .axis{stroke:var(--line);stroke-width:1}
+.chart .lbl{font-family:var(--sans);font-size:14px;fill:var(--muted)}
+.chart .gen{font-family:var(--serif);font-size:20px;fill:var(--ink)}
+.chart .val{font-family:var(--serif);font-size:26px;font-weight:600}
+.chart .inf{stroke:var(--accent);fill:none;stroke-width:3}
+.chart .not{stroke:var(--bronze);fill:none;stroke-width:2;stroke-dasharray:6 6}
+.legend{display:flex;flex-wrap:wrap;gap:20px;font-size:.9rem;color:var(--muted);margin-top:16px}
+.legend span::before{content:"";display:inline-block;width:22px;height:0;border-top:3px solid var(--accent);vertical-align:middle;margin-right:8px}
+.legend span.n::before{border-top:2px dashed var(--bronze)}
+.pull{font-family:var(--serif);font-size:clamp(1.6rem,2.6vw,2.1rem);line-height:1.25;color:var(--accent);margin-bottom:20px}
+@media (max-width:860px){.cycle-grid{grid-template-columns:1fr;gap:32px}}
+
+/* Chapters */
+.chapters{list-style:none;margin:0;padding:0;counter-reset:ch}
+.chapters li{display:grid;grid-template-columns:72px 1fr 220px;gap:24px;align-items:baseline;padding:28px 0;border-top:1px solid var(--line)}
+.chapters li:last-child{border-bottom:1px solid var(--line)}
+.chapters .no{font-family:var(--serif);font-size:1.6rem;color:var(--bronze)}
+.chapters h3{margin-bottom:6px}
+.chapters p{margin:0;color:var(--muted);max-width:62ch}
+.chapters .stat{font-size:.92rem;color:var(--muted);border-left:2px solid var(--blush);padding-left:16px}
+.chapters .stat b{display:block;font-family:var(--serif);font-weight:600;font-size:1.9rem;color:var(--accent);line-height:1.1}
+@media (max-width:860px){.chapters li{grid-template-columns:48px 1fr}.chapters .stat{grid-column:2}}
+
+/* Archetypes */
+.share{display:flex;height:14px;border-radius:7px;overflow:hidden;margin:8px 0 40px}
+.share i{display:block}
+.arch{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:40px 48px}
+.arch article{border-top:3px solid var(--c);padding-top:20px}
+.arch .pct{font-family:var(--serif);font-size:1.15rem;color:var(--muted);margin-bottom:6px}
+.arch h3{margin-bottom:4px}
+.arch em{display:block;font-family:var(--serif);font-size:1.15rem;color:var(--bronze);margin-bottom:12px}
+.arch p{font-size:.97rem;color:var(--muted);margin:0}
+
+/* Voices */
+.voices{background:var(--wine);color:#F5ECE6;padding:clamp(64px,8vw,104px) 0}
+.voices h2{color:#F5ECE6;margin-bottom:40px}
+.quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:48px}
+blockquote{margin:0}
+blockquote p{font-family:var(--serif);font-size:1.45rem;line-height:1.35}
+blockquote footer{font-size:.9rem;color:#D4BFB4}
+blockquote footer strong{display:block;color:#F5ECE6;font-weight:500;font-size:1rem}
+
+/* Form */
+.get{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}
+.inside{list-style:none;padding:0;margin:24px 0 0}
+.inside li{padding:12px 0;border-bottom:1px solid var(--line);color:var(--muted)}
+form{background:var(--surface);padding:clamp(24px,4vw,44px);border-radius:2px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+label{display:block;font-size:.88rem;font-weight:400;color:var(--ink);margin-bottom:18px}
+input,select,textarea{display:block;width:100%;margin-top:6px;font:inherit;font-size:1rem;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:2px;padding:12px 14px}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--bronze);box-shadow:0 0 0 3px color-mix(in srgb,var(--bronze) 25%,transparent)}
+.err{display:none;color:#B3261E;font-size:.82rem;margin-top:4px}
+label.invalid .err{display:block}
+label.invalid input{border-color:#B3261E}
+.fine{font-size:.8rem;color:var(--muted);margin-top:14px}
+.thanks{display:none}
+form.done .fields{display:none}
+form.done .thanks{display:block}
+.thanks h3{margin-bottom:10px}
+@media (max-width:860px){.get{grid-template-columns:1fr;gap:36px}.row{grid-template-columns:1fr}}
+
+/* Footer */
+footer.site{border-top:1px solid var(--line);padding:56px 0 40px;font-size:.92rem;color:var(--muted)}
+.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+.foot h4{font-family:var(--sans);font-weight:500;color:var(--ink);font-size:1rem;margin:0 0 10px}
+.foot a{text-decoration:none}.foot a:hover{color:var(--accent)}
+.disclaimer{margin-top:40px;padding-top:24px;border-top:1px solid var(--line);font-size:.78rem;line-height:1.6}
+@media (max-width:860px){.foot{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="https://www.entrustfamilyoffice.com/" aria-label="Entrust Family Office home">
+      <svg viewBox="0 0 34 40" aria-hidden="true">
+        <g fill="var(--accent)"><circle cx="11" cy="2.6" r="2.4"/><circle cx="17" cy="2.6" r="2.4"/><circle cx="23" cy="2.6" r="2.4"/></g>
+        <path d="M3 8h28v6L10 22l21 8v8H3v-6l16-6" fill="none" stroke="var(--accent)" stroke-width="3.2" stroke-linejoin="miter"/>
+      </svg>
+      <span class="word">ENTRUST<small>FAMILY OFFICE</small></span>
+    </a>
+    <span class="partner">In partnership with Grant Thornton Bharat</span>
+    <a class="btn" href="#get">Get the report</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <h1>Custodians of change</h1>
+      <p class="sub">Next generation of Indian wealth</p>
+      <p class="lede">India is entering a decisive decade of intergenerational transition. We spoke with family business leaders and wealth custodians across three generations to understand how they invest, decide, prepare their successors and build the family offices that will carry their legacy forward.</p>
+      <div class="cta-row">
+        <a class="btn" href="#get">Request the full report</a>
+        <a class="btn ghost" href="#findings">See the key findings</a>
+      </div>
+      <div class="meta">
+        <div><strong>September 2026</strong>Published</div>
+        <div><strong>INR 100 – 10,000 Cr</strong>Family wealth represented</div>
+        <div><strong>3 generations</strong>Founders to grandchildren</div>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg class="rings" viewBox="0 0 400 400">
+        <circle class="r" cx="200" cy="200" r="190"/>
+        <circle class="r" cx="200" cy="200" r="168"/>
+        <circle class="r" cx="200" cy="200" r="152"/>
+        <circle class="r" cx="200" cy="200" r="124"/>
+        <circle class="r" cx="200" cy="200" r="104"/>
+        <circle class="r" cx="200" cy="200" r="78"/>
+        <circle class="r" cx="200" cy="200" r="58"/>
+        <g class="grow"><circle class="g" cx="200" cy="200" r="40"/></g>
+        <g class="grow"><circle class="g" cx="200" cy="200" r="114"/></g>
+        <g class="grow"><circle class="g" cx="200" cy="200" r="180"/></g>
+        <circle class="core" cx="200" cy="200" r="10"/>
+        <text x="246" y="204">First generation</text>
+        <text x="320" y="132" text-anchor="middle">Second</text>
+        <text x="328" y="54" text-anchor="middle">Third</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap band-grid">
+    <h2>Not simply inheriting wealth, but inheriting responsibility</h2>
+    <div>
+      <p>We explored not just how families invest, but how they think about values, governance, succession, risk and purpose. The conversations reveal a perspective that goes beyond preserving and growing what has been built, towards rethinking what wealth is for and how it can be stewarded for the generations to come.</p>
+      <div class="authors">
+        <div><strong>Sreepriya NS</strong>Co-Founder &amp; CEO, Entrust Family Office</div>
+        <div><strong>Pallavi Joshi Bakhru</strong>Partner and Family Office Leader, Grant Thornton Bharat</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="findings">
+  <div class="wrap">
+    <div class="head">
+      <h2>Five shifts shaping how India's families steward wealth</h2>
+      <p class="lede">Across every theme, one pattern repeats: structure is replacing instinct, and the next generation is stepping forward rather than drifting away.</p>
+    </div>
+    <div class="shifts">
+      <div class="shift"><div class="fig">78%</div><h3>From preservation to purpose</h3><p>Rank protecting family wealth, values and continuity as a top priority. Almost half now also want to grow beyond the core business.</p></div>
+      <div class="shift"><div class="fig">56%</div><h3>Growth, on the family's terms</h3><p>Put long-term capital appreciation and compounding first. Calculated risk wins over high-stakes bets, and global investing is now mainstream.</p></div>
+      <div class="shift"><div class="fig">3 models</div><h3>Power is being redistributed</h3><p>Founders favour family-led with advisors, the second generation professional management, and the third a hybrid of both.</p></div>
+      <div class="shift"><div class="fig">54%</div><h3>The succession cycle</h3><p>Of third-generation families say their next generation already influences or co-leads major decisions.</p></div>
+      <div class="shift"><div class="fig">24%</div><h3>The family office evolves</h3><p>Set one up to shift from running the operating business to a diversified portfolio. It is maturing into an institution of governance.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block cycle">
+  <div class="wrap cycle-grid">
+    <figure style="margin:0">
+      <svg class="chart" viewBox="0 0 640 360" role="img" aria-labelledby="chart-t chart-d">
+        <title id="chart-t">How much say the next generation already has</title>
+        <desc id="chart-d">Next generation with meaningful influence or co-leading: 36% in first-generation families, 18% in second, 54% in third. Not currently involved: 18%, 36% and 8%.</desc>
+        <line class="axis" x1="40" y1="300" x2="600" y2="300"/>
+        <line class="axis" x1="40" y1="190" x2="600" y2="190" stroke-dasharray="2 6"/>
+        <line class="axis" x1="40" y1="80" x2="600" y2="80" stroke-dasharray="2 6"/>
+        <text class="lbl" x="40" y="74">60%</text>
+        <text class="lbl" x="40" y="184">30%</text>
+        <!-- y = 300 - v*3.667 : 36→168, 18→234, 54→102, 8→271 -->
+        <path class="not" d="M110 234 C 200 234, 230 168, 320 168 S 450 271, 530 271"/>
+        <path class="inf" d="M110 168 C 200 168, 230 234, 320 234 S 440 102, 530 102"/>
+        <g fill="var(--accent)"><circle cx="110" cy="168" r="7"/><circle cx="320" cy="234" r="7"/><circle cx="530" cy="102" r="7"/></g>
+        <g fill="var(--bg)" stroke="var(--bronze)" stroke-width="2"><circle cx="110" cy="234" r="5"/><circle cx="320" cy="168" r="5"/><circle cx="530" cy="271" r="5"/></g>
+        <g class="val" fill="var(--accent)" text-anchor="middle"><text x="110" y="150">36%</text><text x="320" y="268">18%</text><text x="530" y="84">54%</text></g>
+        <g class="val" fill="var(--bronze)" text-anchor="middle" style="font-size:20px"><text x="110" y="262">18%</text><text x="320" y="152">36%</text><text x="530" y="294">8%</text></g>
+        <g class="gen" text-anchor="middle"><text x="110" y="336">First-gen</text><text x="320" y="336">Second-gen</text><text x="530" y="336">Third-gen</text></g>
+      </svg>
+      <figcaption class="legend"><span>Has meaningful influence or co-leads</span><span class="n">Not currently involved</span></figcaption>
+    </figure>
+    <div>
+      <p class="pull">Families hold the reins tightest during the second handover, then loosen their grip by the third.</p>
+      <p>The assumption that each generation drifts further from the business does not hold. Involvement dips in the second generation as families lean on structure, then rises sharply in the third.</p>
+      <p>Nearly half of third-generation leaders expect to be actively running and scaling the business within four to five years, driven less by obligation than by the opportunity to take it into its next phase of growth.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <div class="head">
+      <h2>Inside the report</h2>
+      <p class="lede">Six chapters on how custodians invest, decide, prepare the next generation and build the institutions around their wealth.</p>
+    </div>
+    <ol class="chapters">
+      <li><span class="no">01</span><div><h3>Changing priorities across generations</h3><p>The language of wealth is shifting from accumulation to stewardship, and from instinct to intention.</p></div><div class="stat"><b>68%</b>say their generation views wealth as a whole portfolio</div></li>
+      <li><span class="no">02</span><div><h3>Balancing risk with long-term growth</h3><p>Neither aggressive nor overly cautious: where families invest abroad, and what they would do with a billion dollars and no rules.</p></div><div class="stat"><b>46%</b>of third-gen leaders would buy businesses outright first</div></li>
+      <li><span class="no">03</span><div><h3>The changing rules of decision-making</h3><p>From a single voice to a shared process, and the tightropes between control and professionalisation.</p></div><div class="stat"><b>~20%</b>say the head of family still makes the final call</div></li>
+      <li><span class="no">04</span><div><h3>The next generation's role in decision-making</h3><p>Who holds the reins today, where families stand on succession, and the role leaders expect to play next.</p></div><div class="stat"><b>30%</b>have committed succession to a documented plan</div></li>
+      <li><span class="no">05</span><div><h3>Building the family office</h3><p>What triggers a family office, what it should prioritise, and what families would design differently today.</p></div><div class="stat"><b>17%</b>would start with better technology and reporting</div></li>
+      <li><span class="no">06</span><div><h3>Custodians of change: The Archetypes</h3><p>Four distinct ways families are navigating the transition from one generation's wealth to the next one's stewardship.</p></div><div class="stat"><b>4</b>archetypes, each with a clear next step</div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="block" style="padding-top:0">
+  <div class="wrap">
+    <div class="head">
+      <h2>Which custodian is your family?</h2>
+      <p class="lede">Shaped by governance, next-generation involvement and long-term priorities. The bar shows each archetype's share of the families we spoke with.</p>
+    </div>
+    <div class="share" role="img" aria-label="Legacy Custodians 30%, Institutional Leaders 30%, Governance Architects 24%, Enterprise Stewards 16%">
+      <i style="width:30%;background:#5D0023"></i><i style="width:30%;background:#8A3A55"></i><i style="width:24%;background:#A67C52"></i><i style="width:16%;background:#D9C2B4"></i>
+    </div>
+    <div class="arch">
+      <article style="--c:#5D0023"><div class="pct">Nearly 30%</div><h3>The Legacy Custodians</h3><em>Protecting what has been built</em><p>Continuity lives in relationships and shared values, with authority still resting with the current generation as they prepare successors.</p></article>
+      <article style="--c:#8A3A55"><div class="pct">30%</div><h3>The Institutional Leaders</h3><em>Governance and leadership reinforce one another</em><p>Family judgement and professional discipline together, so good decisions depend less on any one person.</p></article>
+      <article style="--c:#A67C52"><div class="pct">24%</div><h3>The Governance Architects</h3><em>Building the structure before successors arrive</em><p>Governance, decision frameworks and long-term planning are in place, often before the next generation is ready to lead.</p></article>
+      <article style="--c:#D9C2B4"><div class="pct">16%</div><h3>The Enterprise Stewards</h3><em>Leading the business, with structure yet to follow</em><p>The next generation shapes the business before fully inheriting it. Succession is a gradual transfer of trust.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="voices">
+  <div class="wrap">
+    <h2>Voices from the study</h2>
+    <div class="quotes">
+      <blockquote><p>Good governance is not tested when everyone agrees. It is tested when they don't.</p><footer><strong>Sreepriya NS</strong>Co-Founder &amp; CEO, Entrust Family Office</footer></blockquote>
+      <blockquote><p>True wealth custodianship is not only about preserving and compounding capital. It is about building an institution beyond the founder.</p><footer><strong>Ajit Issac</strong>Founder &amp; Chairman, Quess Corp</footer></blockquote>
+      <blockquote><p>Successful succession begins long before leadership or ownership changes hands.</p><footer><strong>Pallavi Joshi Bakhru</strong>Partner and Family Office Leader, Grant Thornton Bharat</footer></blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="get">
+  <div class="wrap get">
+    <div>
+      <h2>Request the full report</h2>
+      <p class="lede" style="margin-top:16px">Share a few details and we will email you the complete 30-page study.</p>
+      <ul class="inside">
+        <li>Generational data on priorities, risk and global allocation</li>
+        <li>How families govern decisions and plan succession</li>
+        <li>What triggers a family office and what to build differently</li>
+        <li>The four custodian archetypes and their next steps</li>
+      </ul>
+    </div>
+    <form id="lead" novalidate>
+      <div class="fields">
+        <div class="row">
+          <label>Name *<input name="name" autocomplete="name" required><span class="err">Enter your name.</span></label>
+          <label>Company name<input name="company" autocomplete="organization"></label>
+        </div>
+        <div class="row">
+          <label>Email *<input type="email" name="email" autocomplete="email" required><span class="err">Enter a valid email address.</span></label>
+          <label>Phone number *<input type="tel" name="phone" autocomplete="tel" required pattern="[0-9+\-\s()]{8,}"><span class="err">Enter a valid phone number.</span></label>
+        </div>
+        <div class="row">
+          <label>Role
+            <select name="role"><option value="">Choose one</option><option>Founder / first generation</option><option>Second generation</option><option>Third generation or later</option><option>Family office professional</option><option>Advisor</option><option>Other</option></select>
+          </label>
+          <label>City / Country<input name="city" autocomplete="address-level2"></label>
+        </div>
+        <label>Anything you'd like to discuss? (optional)<textarea name="message" rows="3"></textarea></label>
+        <input type="hidden" name="utm_source"><input type="hidden" name="utm_medium"><input type="hidden" name="utm_campaign"><input type="hidden" name="gclid"><input type="hidden" name="page_url">
+        <button class="btn" type="submit">Request the report</button>
+        <p class="fine">By submitting, you agree that Entrust Family Office may contact you about this report and related services. We do not share your details.</p>
+      </div>
+      <div class="thanks" role="status" aria-live="polite">
+        <h3>Request received</h3>
+        <p>We'll email the report to <strong id="sent-to"></strong> shortly. If you'd like to talk sooner, write to <a href="mailto:reachus@entrust.co.in">reachus@entrust.co.in</a> or call <a href="tel:+919739744747">+91 97397 44747</a>.</p>
+      </div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <h4>Entrust Family Office</h4>
+        <p>A boutique multi-family office founded in 2013, supporting families with both investment and non-investment needs on a conflict-free, fee-based model. Pan-India presence with $2Bn+ in assets under advisory.</p>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <p><a href="mailto:reachus@entrust.co.in">reachus@entrust.co.in</a><br><a href="tel:+919739744747">+91 97397 44747</a></p>
+        <p>24, 4th Floor, 1st Cross, Magrath Road, Bangalore 560025</p>
+      </div>
+      <div>
+        <h4>More</h4>
+        <p><a href="https://www.entrustfamilyoffice.com/">entrustfamilyoffice.com</a><br><a href="https://www.grantthornton.in/">grantthornton.in</a><br><a href="https://www.entrustfamilyoffice.com/privacy-policy/">Privacy policy</a></p>
+      </div>
+    </div>
+    <p class="disclaimer">Custodians of change is a joint thought-leadership publication by Grant Thornton Bharat LLP and Entrust Family Office, for general information only. It does not constitute investment, financial, legal, tax, accounting or succession advice. Findings are based on conversations with a select group of Indian family wealth custodians, are illustrative in nature and are not derived from a statistically validated survey. Quoted views are those of the individuals and not necessarily of their organisations. Readers should obtain tailored advice from a qualified professional before acting.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // Carry campaign parameters into the form so each lead records its source.
+  var form=document.getElementById('lead');
+  var q=new URLSearchParams(location.search);
+  ['utm_source','utm_medium','utm_campaign','gclid'].forEach(function(k){if(q.get(k))form.elements[k].value=q.get(k);});
+  form.elements.page_url.value=location.href;
+
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var ok=true;
+    ['name','email','phone'].forEach(function(n){
+      var el=form.elements[n],lab=el.closest('label');
+      var valid=el.checkValidity()&&el.value.trim()!=='';
+      lab.classList.toggle('invalid',!valid);
+      if(!valid&&ok){el.focus();ok=false;}
+    });
+    if(!ok)return;
+    // TODO: send the form data to your form handler / CRM endpoint here.
+    document.getElementById('sent-to').textContent=form.elements.email.value;
+    form.classList.add('done');
+  });
+  form.addEventListener('input',function(e){var l=e.target.closest('label');if(l&&l.classList.contains('invalid')&&e.target.checkValidity())l.classList.remove('invalid');});
+})();
+</script>
+</body>
+</html>
